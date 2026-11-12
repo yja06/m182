@@ -4,7 +4,7 @@ Repository für alle Kursunterlagen, Übungen, Prüfungsvorbereitung und die Pro
 
 ---
 
-## 📅 Wichtige Eckdaten & Termine
+## Wichtige Daten & Termine
 
 * **Modul:** M182 (Systemsicherheit)
 * **LB1 (30 % der Note):** Schriftliche elektronische Prüfung am **17.12.2026** (Dauer: 30 Min.)
@@ -13,7 +13,7 @@ Repository für alle Kursunterlagen, Übungen, Prüfungsvorbereitung und die Pro
 
 ---
 
-## 📂 Struktur des Repositories
+## Struktur des Repositories
 
 * **[`01_prüfung_lb1/`](./01_prüfung_lb1/):** Strukturierte Zusammenfassung aller prüfungsrelevanten Themen (Prüfungshilfsmittel).
 * **[`02_übungen/`](./02_übungen/):** Lösungen zu den Unterrichts- und Laborübungen.
