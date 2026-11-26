@@ -1,0 +1,4 @@
+﻿CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS             PORTS     NAMES
+00c0dd5c18c6   tleemcjr/metasploitable2   "sh -c '/bin/serviceÔÇª"   36 minutes ago   Up 36 minutes                metasploitable
+0bd702b6fd14   ubuntu:22.04               "/bin/bash"              13 days ago      Up About an hour             hardeninglab
+
