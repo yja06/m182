@@ -1,0 +1,626 @@
+﻿docker : 2026/11/26 14:16:10 Using config file /config/config.toml
+In C:\Users\admin\m182\honeytrap_test.ps1:76 Zeichen:8
++ $log = docker logs honeytrap 2>&1 | Out-String
++        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026/11/26 14:1...fig/config.toml:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Honeytrap starting (dc43uagm92dg00ard4dg)...
+Version: DEVELOPMENT.GOGET (DEVELOPMENT.)
+[36m14:16:10.519 honeytrap/server ÔûÂ DEBU 002 Using datadir: /data[0m
+[36m14:16:10.519 services ÔûÂ DEBU 003 Could not load private-key, generating one.[0m
+14:16:10.589 honeytrap/server ÔûÂ INFO 004 Configured service ssh-simulator (ssh-simulator)[0m
+14:16:10.589 honeytrap/server ÔûÂ INFO 005 Configured service telnet (telnet)[0m
+14:16:10.590 honeytrap/server ÔûÂ INFO 006 Configured port tcp/:8022[0m
+14:16:10.590 honeytrap/server ÔûÂ INFO 007 Configured port tcp/:8023[0m
+14:16:10.590 honeytrap/server ÔûÂ INFO 008 Configured port tcp/:5900[0m
+[33m14:16:10.590 honeytrap/server ÔûÂ WARN 009 Unrecognized keys in configuration: [service.telnet.image service.telnet.server-name][0m
+14:16:10.591 listeners/socket ÔûÂ INFO 00a Listener started: tcp/:8022[0m
+14:16:10.591 listeners/socket ÔûÂ INFO 00b Listener started: tcp/:8023[0m
+14:16:10.591 listeners/socket ÔûÂ INFO 00c Listener started: tcp/:5900[0m
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:16:40.52000274 +0000 UTC m=+30.212459860, sensor=honeytrap, sequence=0, token=dc43uagm92dg00ard4dg, type=info
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:17:10.519712503 +0000 UTC m=+60.212169723, sensor=honeytrap, sequence=1, token=dc43uagm92dg00ard4dg, type=info
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:17:40.520277382 +0000 UTC m=+90.212734602, sensor=honeytrap, sequence=2, token=dc43uagm92dg00ard4dg, type=info
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:18:10.519511233 +0000 UTC m=+120.211968353, sensor=honeytrap, sequence=3, token=dc43uagm92dg00ard4dg, type=info
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:18:40.520024701 +0000 UTC m=+150.212481821, sensor=honeytrap, sequence=4, token=dc43uagm92dg00ard4dg, type=info
+[36m14:18:53.610 honeytrap/server ÔûÂ DEBU 00d Accepted connection for 172.17.0.2:43392 => 172.17.0.4:5900[0m
+[36m14:18:53.611 honeytrap/server ÔûÂ DEBU 00e Handling connection for 172.17.0.2:43392 => 172.17.0.4:5900 telnet(telnet)[0m
+[36m14:18:53.611 honeytrap/server ÔûÂ DEBU 00f Accepted connection for 172.17.0.2:45922 => 172.17.0.4:8022[0m
+[36m14:18:53.611 honeytrap/server ÔûÂ DEBU 010 Handling connection for 172.17.0.2:45922 => 172.17.0.4:8022 ssh-simulator(ssh-simulator)[0m
+services > telnet > category=telnet, date=2026-11-26 14:18:53.611076608 +0000 UTC m=+163.303533728, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43392, telnet.sessionid=dc43vj8m92dg00ard4e0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:18:53.612 honeytrap/server ÔûÂ DEBU 011 Accepted connection for 172.17.0.2:36850 => 172.17.0.4:8023[0m
+[36m14:18:53.612 honeytrap/server ÔûÂ DEBU 012 Handling connection for 172.17.0.2:36850 => 172.17.0.4:8023 ssh-simulator(ssh-simulator)[0m
+services > telnet > category=telnet, date=2026-11-26 14:18:59.620142516 +0000 UTC m=+169.312599636, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43392, telnet.password=, telnet.sessionid=dc43vj8m92dg00ard4e0, telnet.username=GET / HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:19:04.625 honeytrap/server ÔûÂ DEBU 013 Disconnected connection for 172.17.0.2:43392 => 172.17.0.4:5900[0m
+[36m14:19:04.625 honeytrap/server ÔûÂ DEBU 014 Accepted connection for 172.17.0.2:57546 => 172.17.0.4:5900[0m
+[36m14:19:04.625 honeytrap/server ÔûÂ DEBU 015 Handling connection for 172.17.0.2:57546 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:04.626040423 +0000 UTC m=+174.318497543, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57546, telnet.sessionid=dc43vm0m92dg00ard4fg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:19:04.628137723 +0000 UTC m=+174.320594843, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57546, telnet.password=, telnet.sessionid=dc43vm0m92dg00ard4fg, telnet.username=, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:19:09.632 honeytrap/server ÔûÂ DEBU 016 Disconnected connection for 172.17.0.2:57546 => 172.17.0.4:5900[0m
+[36m14:19:09.632 honeytrap/server ÔûÂ DEBU 017 Accepted connection for 172.17.0.2:57556 => 172.17.0.4:5900[0m
+[36m14:19:09.632 honeytrap/server ÔûÂ DEBU 018 Handling connection for 172.17.0.2:57556 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:09.632800125 +0000 UTC m=+179.325257145, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57556, telnet.sessionid=dc43vn8m92dg00ard4g0, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:19:09.634592725 +0000 UTC m=+179.327049845, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57556, telnet.password=, telnet.sessionid=dc43vn8m92dg00ard4g0, telnet.username=OPTIONS / HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:19:10.519483732 +0000 UTC m=+180.211940952, sensor=honeytrap, sequence=5, token=dc43uagm92dg00ard4dg, type=info
+[36m14:19:14.638 honeytrap/server ÔûÂ DEBU 019 Disconnected connection for 172.17.0.2:57556 => 172.17.0.4:5900[0m
+[36m14:19:14.638 honeytrap/server ÔûÂ DEBU 01a Accepted connection for 172.17.0.2:52018 => 172.17.0.4:5900[0m
+[36m14:19:14.638 honeytrap/server ÔûÂ DEBU 01b Handling connection for 172.17.0.2:52018 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:14.63883264 +0000 UTC m=+184.331289760, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=52018, telnet.sessionid=dc43vogm92dg00ard4gg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:19:14.640378541 +0000 UTC m=+184.332835661, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=52018, telnet.password=, telnet.sessionid=dc43vogm92dg00ard4gg, telnet.username=OPTIONS / RTSP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:19:19.644 honeytrap/server ÔûÂ DEBU 01c Disconnected connection for 172.17.0.2:52018 => 172.17.0.4:5900[0m
+[36m14:19:19.644 honeytrap/server ÔûÂ DEBU 01d Accepted connection for 172.17.0.2:52032 => 172.17.0.4:5900[0m
+[36m14:19:19.644 honeytrap/server ÔûÂ DEBU 01e Handling connection for 172.17.0.2:52032 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:19.644745176 +0000 UTC m=+189.337202196, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=52032, telnet.sessionid=dc43vpom92dg00ard4h0, token=dc43uagm92dg00ard4dg, type=connect
+[31m14:19:23.613 honeytrap/server ÔûÂ ERRO 01f Error handling service: ssh-simulator: read tcp 172.17.0.4:8023->172.17.0.2:36850: i/o timeout[0m
+[36m14:19:23.613 honeytrap/server ÔûÂ DEBU 021 Disconnected connection for 172.17.0.2:36850 => 172.17.0.4:8023[0m
+[31m14:19:23.613 honeytrap/server ÔûÂ ERRO 020 Error handling service: ssh-simulator: read tcp 172.17.0.4:8022->172.17.0.2:45922: i/o timeout[0m
+[36m14:19:23.613 honeytrap/server ÔûÂ DEBU 022 Disconnected connection for 172.17.0.2:45922 => 172.17.0.4:8022[0m
+[36m14:19:24.650 honeytrap/server ÔûÂ DEBU 023 Disconnected connection for 172.17.0.2:52032 => 172.17.0.4:5900[0m
+[36m14:19:24.650 honeytrap/server ÔûÂ DEBU 024 Accepted connection for 172.17.0.2:33596 => 172.17.0.4:5900[0m
+[36m14:19:24.650 honeytrap/server ÔûÂ DEBU 025 Handling connection for 172.17.0.2:33596 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:24.650966079 +0000 UTC m=+194.343423199, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33596, telnet.sessionid=dc43vr0m92dg00ard4hg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:19:29.655 honeytrap/server ÔûÂ DEBU 026 Disconnected connection for 172.17.0.2:33596 => 172.17.0.4:5900[0m
+[36m14:19:29.656 honeytrap/server ÔûÂ DEBU 027 Accepted connection for 172.17.0.2:33598 => 172.17.0.4:5900[0m
+[36m14:19:29.656 honeytrap/server ÔûÂ DEBU 028 Handling connection for 172.17.0.2:33598 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:29.656187485 +0000 UTC m=+199.348644605, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33598, telnet.sessionid=dc43vs8m92dg00ard4i0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:19:34.662 honeytrap/server ÔûÂ DEBU 029 Disconnected connection for 172.17.0.2:33598 => 172.17.0.4:5900[0m
+[36m14:19:34.662 honeytrap/server ÔûÂ DEBU 02a Accepted connection for 172.17.0.2:52320 => 172.17.0.4:5900[0m
+[36m14:19:34.662 honeytrap/server ÔûÂ DEBU 02b Handling connection for 172.17.0.2:52320 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:34.66298543 +0000 UTC m=+204.355442550, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=52320, telnet.sessionid=dc43vtgm92dg00ard4ig, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:19:40.520061291 +0000 UTC m=+210.212518411, sensor=honeytrap, sequence=6, token=dc43uagm92dg00ard4dg, type=info
+[36m14:19:42.168 honeytrap/server ÔûÂ DEBU 02c Disconnected connection for 172.17.0.2:52320 => 172.17.0.4:5900[0m
+[36m14:19:42.169 honeytrap/server ÔûÂ DEBU 02d Accepted connection for 172.17.0.2:39572 => 172.17.0.4:5900[0m
+[36m14:19:42.169 honeytrap/server ÔûÂ DEBU 02e Handling connection for 172.17.0.2:39572 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:42.169746277 +0000 UTC m=+211.862203297, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=39572, telnet.sessionid=dc43vvgm92dg00ard4j0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:19:47.170 honeytrap/server ÔûÂ DEBU 02f Disconnected connection for 172.17.0.2:39572 => 172.17.0.4:5900[0m
+[36m14:19:47.170 honeytrap/server ÔûÂ DEBU 030 Accepted connection for 172.17.0.2:39586 => 172.17.0.4:5900[0m
+[36m14:19:47.170 honeytrap/server ÔûÂ DEBU 031 Handling connection for 172.17.0.2:39586 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:47.17064747 +0000 UTC m=+216.863104590, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=39586, telnet.sessionid=dc4400om92dg00ard4jg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:19:52.176 honeytrap/server ÔûÂ DEBU 032 Disconnected connection for 172.17.0.2:39586 => 172.17.0.4:5900[0m
+[36m14:19:52.177 honeytrap/server ÔûÂ DEBU 033 Accepted connection for 172.17.0.2:41916 => 172.17.0.4:5900[0m
+[36m14:19:52.177 honeytrap/server ÔûÂ DEBU 034 Handling connection for 172.17.0.2:41916 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:52.177739768 +0000 UTC m=+221.870196888, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=41916, telnet.sessionid=dc44020m92dg00ard4k0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:19:57.183 honeytrap/server ÔûÂ DEBU 035 Disconnected connection for 172.17.0.2:41916 => 172.17.0.4:5900[0m
+[36m14:19:57.183 honeytrap/server ÔûÂ DEBU 036 Accepted connection for 172.17.0.2:41926 => 172.17.0.4:5900[0m
+[36m14:19:57.183 honeytrap/server ÔûÂ DEBU 037 Handling connection for 172.17.0.2:41926 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:19:57.183878526 +0000 UTC m=+226.876335546, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=41926, telnet.sessionid=dc44038m92dg00ard4kg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:20:02.189 honeytrap/server ÔûÂ DEBU 038 Disconnected connection for 172.17.0.2:41926 => 172.17.0.4:5900[0m
+[36m14:20:02.189 honeytrap/server ÔûÂ DEBU 039 Accepted connection for 172.17.0.2:41990 => 172.17.0.4:5900[0m
+[36m14:20:02.190 honeytrap/server ÔûÂ DEBU 03a Handling connection for 172.17.0.2:41990 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:02.190061463 +0000 UTC m=+231.882518583, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=41990, telnet.sessionid=dc4404gm92dg00ard4l0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:20:07.195 honeytrap/server ÔûÂ DEBU 03b Disconnected connection for 172.17.0.2:41990 => 172.17.0.4:5900[0m
+[36m14:20:07.196 honeytrap/server ÔûÂ DEBU 03c Accepted connection for 172.17.0.2:41992 => 172.17.0.4:5900[0m
+[36m14:20:07.196 honeytrap/server ÔûÂ DEBU 03d Handling connection for 172.17.0.2:41992 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:07.196218269 +0000 UTC m=+236.888675389, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=41992, telnet.sessionid=dc4405om92dg00ard4lg, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:20:10.520585297 +0000 UTC m=+240.213042417, sensor=honeytrap, sequence=7, token=dc43uagm92dg00ard4dg, type=info
+[36m14:20:12.202 honeytrap/server ÔûÂ DEBU 03e Disconnected connection for 172.17.0.2:41992 => 172.17.0.4:5900[0m
+[36m14:20:12.202 honeytrap/server ÔûÂ DEBU 03f Accepted connection for 172.17.0.2:56212 => 172.17.0.4:5900[0m
+[36m14:20:12.202 honeytrap/server ÔûÂ DEBU 040 Handling connection for 172.17.0.2:56212 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:12.202573564 +0000 UTC m=+241.895030584, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=56212, telnet.sessionid=dc44070m92dg00ard4m0, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:20:12.203820864 +0000 UTC m=+241.896277984, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=56212, telnet.password=, telnet.sessionid=dc44070m92dg00ard4m0, telnet.username=GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:20:17.208 honeytrap/server ÔûÂ DEBU 041 Disconnected connection for 172.17.0.2:56212 => 172.17.0.4:5900[0m
+[36m14:20:17.208 honeytrap/server ÔûÂ DEBU 042 Accepted connection for 172.17.0.2:56216 => 172.17.0.4:5900[0m
+[36m14:20:17.208 honeytrap/server ÔûÂ DEBU 043 Handling connection for 172.17.0.2:56216 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:17.208989919 +0000 UTC m=+246.901447039, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=56216, telnet.sessionid=dc44088m92dg00ard4mg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:20:22.215 honeytrap/server ÔûÂ DEBU 044 Disconnected connection for 172.17.0.2:56216 => 172.17.0.4:5900[0m
+[36m14:20:22.215 honeytrap/server ÔûÂ DEBU 045 Accepted connection for 172.17.0.2:43384 => 172.17.0.4:5900[0m
+[36m14:20:22.215 honeytrap/server ÔûÂ DEBU 046 Handling connection for 172.17.0.2:43384 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:22.21575608 +0000 UTC m=+251.908213100, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43384, telnet.sessionid=dc4409gm92dg00ard4n0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:20:27.220 honeytrap/server ÔûÂ DEBU 047 Disconnected connection for 172.17.0.2:43384 => 172.17.0.4:5900[0m
+[36m14:20:27.220 honeytrap/server ÔûÂ DEBU 048 Accepted connection for 172.17.0.2:43386 => 172.17.0.4:5900[0m
+[36m14:20:27.220 honeytrap/server ÔûÂ DEBU 049 Handling connection for 172.17.0.2:43386 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:27.220751888 +0000 UTC m=+256.913208908, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43386, telnet.sessionid=dc440aom92dg00ard4ng, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:20:32.226 honeytrap/server ÔûÂ DEBU 04a Disconnected connection for 172.17.0.2:43386 => 172.17.0.4:5900[0m
+[36m14:20:32.226 honeytrap/server ÔûÂ DEBU 04b Accepted connection for 172.17.0.2:35470 => 172.17.0.4:5900[0m
+[36m14:20:32.226 honeytrap/server ÔûÂ DEBU 04c Handling connection for 172.17.0.2:35470 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:32.226402038 +0000 UTC m=+261.918859058, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:20:32.227912638 +0000 UTC m=+261.920369758, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.password=Via: SIP/2.0/TCP nm;branch=foo, telnet.sessionid=dc440c0m92dg00ard4o0, telnet.username=OPTIONS sip:nm SIP/2.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228063738 +0000 UTC m=+261.920520858, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=From: <sip:nm@nm>;tag=root, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228128638 +0000 UTC m=+261.920585758, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=To: <sip:nm2@nm2>, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228186138 +0000 UTC m=+261.920643258, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=Call-ID: 50000, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228243238 +0000 UTC m=+261.920700358, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=CSeq: 42 OPTIONS, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228324138 +0000 UTC m=+261.920781158, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=Max-Forwards: 70, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228383038 +0000 UTC m=+261.920840058, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=Content-Length: 0, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228462338 +0000 UTC m=+261.920919358, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=Contact: <sip:nm@nm>, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228520438 +0000 UTC m=+261.920977558, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=Accept: application/sdp, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:20:32.228567138 +0000 UTC m=+261.921024158, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35470, telnet.command=, telnet.sessionid=dc440c0m92dg00ard4o0, token=dc43uagm92dg00ard4dg, type=session
+[36m14:20:39.729 honeytrap/server ÔûÂ DEBU 04d Disconnected connection for 172.17.0.2:35470 => 172.17.0.4:5900[0m
+[36m14:20:39.729 honeytrap/server ÔûÂ DEBU 04e Accepted connection for 172.17.0.2:35482 => 172.17.0.4:5900[0m
+[36m14:20:39.729 honeytrap/server ÔûÂ DEBU 04f Handling connection for 172.17.0.2:35482 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:39.729937599 +0000 UTC m=+269.422394719, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=35482, telnet.sessionid=dc440dom92dg00ard4og, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:20:40.5200568 +0000 UTC m=+270.212513920, sensor=honeytrap, sequence=8, token=dc43uagm92dg00ard4dg, type=info
+[36m14:20:44.735 honeytrap/server ÔûÂ DEBU 050 Disconnected connection for 172.17.0.2:35482 => 172.17.0.4:5900[0m
+[36m14:20:44.736 honeytrap/server ÔûÂ DEBU 051 Accepted connection for 172.17.0.2:55792 => 172.17.0.4:5900[0m
+[36m14:20:44.736 honeytrap/server ÔûÂ DEBU 052 Handling connection for 172.17.0.2:55792 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:44.736398304 +0000 UTC m=+274.428855324, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55792, telnet.sessionid=dc440f0m92dg00ard4p0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:20:49.742 honeytrap/server ÔûÂ DEBU 053 Disconnected connection for 172.17.0.2:55792 => 172.17.0.4:5900[0m
+[36m14:20:49.743 honeytrap/server ÔûÂ DEBU 054 Accepted connection for 172.17.0.2:55800 => 172.17.0.4:5900[0m
+[36m14:20:49.743 honeytrap/server ÔûÂ DEBU 055 Handling connection for 172.17.0.2:55800 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:49.743365577 +0000 UTC m=+279.435822597, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55800, telnet.sessionid=dc440g8m92dg00ard4pg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:20:54.750 honeytrap/server ÔûÂ DEBU 056 Disconnected connection for 172.17.0.2:55800 => 172.17.0.4:5900[0m
+[36m14:20:54.751 honeytrap/server ÔûÂ DEBU 057 Accepted connection for 172.17.0.2:40740 => 172.17.0.4:5900[0m
+[36m14:20:54.751 honeytrap/server ÔûÂ DEBU 058 Handling connection for 172.17.0.2:40740 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:54.751909621 +0000 UTC m=+284.444366841, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=40740, telnet.sessionid=dc440hgm92dg00ard4q0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:20:59.756 honeytrap/server ÔûÂ DEBU 059 Disconnected connection for 172.17.0.2:40740 => 172.17.0.4:5900[0m
+[36m14:20:59.757 honeytrap/server ÔûÂ DEBU 05a Accepted connection for 172.17.0.2:40750 => 172.17.0.4:5900[0m
+[36m14:20:59.757 honeytrap/server ÔûÂ DEBU 05b Handling connection for 172.17.0.2:40750 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:20:59.757192425 +0000 UTC m=+289.449649445, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=40750, telnet.sessionid=dc440iom92dg00ard4qg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:21:04.760 honeytrap/server ÔûÂ DEBU 05c Disconnected connection for 172.17.0.2:40750 => 172.17.0.4:5900[0m
+[36m14:21:04.760 honeytrap/server ÔûÂ DEBU 05d Accepted connection for 172.17.0.2:45030 => 172.17.0.4:5900[0m
+[36m14:21:04.760 honeytrap/server ÔûÂ DEBU 05e Handling connection for 172.17.0.2:45030 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:04.760980367 +0000 UTC m=+294.453437387, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45030, telnet.sessionid=dc440k0m92dg00ard4r0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:21:09.766 honeytrap/server ÔûÂ DEBU 05f Disconnected connection for 172.17.0.2:45030 => 172.17.0.4:5900[0m
+[36m14:21:09.766 honeytrap/server ÔûÂ DEBU 060 Accepted connection for 172.17.0.2:45034 => 172.17.0.4:5900[0m
+[36m14:21:09.766 honeytrap/server ÔûÂ DEBU 061 Handling connection for 172.17.0.2:45034 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:09.766805798 +0000 UTC m=+299.459262818, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45034, telnet.sessionid=dc440l8m92dg00ard4rg, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:21:10.519491012 +0000 UTC m=+300.211948132, sensor=honeytrap, sequence=9, token=dc43uagm92dg00ard4dg, type=info
+[36m14:21:12.191 honeytrap/server ÔûÂ DEBU 062 Accepted connection for 172.17.0.2:52414 => 172.17.0.4:5900[0m
+[36m14:21:12.191 honeytrap/server ÔûÂ DEBU 063 Handling connection for 172.17.0.2:52414 => 172.17.0.4:5900 telnet(telnet)[0m
+[36m14:21:12.191 honeytrap/server ÔûÂ DEBU 064 Accepted connection for 172.17.0.2:40378 => 172.17.0.4:8022[0m
+[36m14:21:12.191 honeytrap/server ÔûÂ DEBU 065 Handling connection for 172.17.0.2:40378 => 172.17.0.4:8022 ssh-simulator(ssh-simulator)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:12.191731682 +0000 UTC m=+301.884188702, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=52414, telnet.sessionid=dc440m0m92dg00ard4s0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:21:12.192 honeytrap/server ÔûÂ DEBU 066 Accepted connection for 172.17.0.2:58396 => 172.17.0.4:8023[0m
+[36m14:21:12.192 honeytrap/server ÔûÂ DEBU 067 Handling connection for 172.17.0.2:58396 => 172.17.0.4:8023 ssh-simulator(ssh-simulator)[0m
+[36m14:21:14.772 honeytrap/server ÔûÂ DEBU 068 Disconnected connection for 172.17.0.2:45034 => 172.17.0.4:5900[0m
+[36m14:21:14.772 honeytrap/server ÔûÂ DEBU 069 Accepted connection for 172.17.0.2:52430 => 172.17.0.4:5900[0m
+[36m14:21:14.772 honeytrap/server ÔûÂ DEBU 06a Handling connection for 172.17.0.2:52430 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:14.772863235 +0000 UTC m=+304.465320255, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=52430, telnet.sessionid=dc440mgm92dg00ard4tg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:21:18.200609972 +0000 UTC m=+307.893067192, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=52414, telnet.password=, telnet.sessionid=dc440m0m92dg00ard4s0, telnet.username=GET / HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:21:19.777 honeytrap/server ÔûÂ DEBU 06b Disconnected connection for 172.17.0.2:52430 => 172.17.0.4:5900[0m
+[36m14:21:19.778 honeytrap/server ÔûÂ DEBU 06c Accepted connection for 172.17.0.2:52436 => 172.17.0.4:5900[0m
+[36m14:21:19.778 honeytrap/server ÔûÂ DEBU 06d Handling connection for 172.17.0.2:52436 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:19.778696659 +0000 UTC m=+309.471153779, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=52436, telnet.sessionid=dc440nom92dg00ard4u0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:21:23.205 honeytrap/server ÔûÂ DEBU 06e Disconnected connection for 172.17.0.2:52414 => 172.17.0.4:5900[0m
+[36m14:21:23.206 honeytrap/server ÔûÂ DEBU 06f Accepted connection for 172.17.0.2:37160 => 172.17.0.4:5900[0m
+[36m14:21:23.207 honeytrap/server ÔûÂ DEBU 070 Handling connection for 172.17.0.2:37160 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:23.207473555 +0000 UTC m=+312.899930775, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37160, telnet.sessionid=dc440oom92dg00ard4ug, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:21:23.210636755 +0000 UTC m=+312.903093875, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37160, telnet.password=, telnet.sessionid=dc440oom92dg00ard4ug, telnet.username=, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:21:24.784 honeytrap/server ÔûÂ DEBU 071 Disconnected connection for 172.17.0.2:52436 => 172.17.0.4:5900[0m
+[36m14:21:24.784 honeytrap/server ÔûÂ DEBU 072 Accepted connection for 172.17.0.2:37170 => 172.17.0.4:5900[0m
+[36m14:21:24.784 honeytrap/server ÔûÂ DEBU 073 Handling connection for 172.17.0.2:37170 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:24.784984423 +0000 UTC m=+314.477441543, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37170, telnet.sessionid=dc440p0m92dg00ard4v0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:21:28.212 honeytrap/server ÔûÂ DEBU 074 Disconnected connection for 172.17.0.2:37160 => 172.17.0.4:5900[0m
+[36m14:21:28.212 honeytrap/server ÔûÂ DEBU 075 Accepted connection for 172.17.0.2:37180 => 172.17.0.4:5900[0m
+[36m14:21:28.213 honeytrap/server ÔûÂ DEBU 076 Handling connection for 172.17.0.2:37180 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:28.213026083 +0000 UTC m=+317.905483203, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37180, telnet.sessionid=dc440q0m92dg00ard4vg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:21:28.213976183 +0000 UTC m=+317.906433303, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37180, telnet.password=, telnet.sessionid=dc440q0m92dg00ard4vg, telnet.username=OPTIONS / HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:21:29.790 honeytrap/server ÔûÂ DEBU 077 Disconnected connection for 172.17.0.2:37170 => 172.17.0.4:5900[0m
+[36m14:21:29.823 honeytrap/server ÔûÂ DEBU 078 Accepted connection for 172.17.0.2:68 => 172.17.0.4:5900[0m
+[36m14:21:29.824 honeytrap/server ÔûÂ DEBU 079 Handling connection for 172.17.0.2:68 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:29.824124789 +0000 UTC m=+319.516581909, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=68, telnet.sessionid=dc440q8m92dg00ard500, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:21:30.826 honeytrap/server ÔûÂ DEBU 07a Disconnected connection for 172.17.0.2:68 => 172.17.0.4:5900[0m
+[36m14:21:33.219 honeytrap/server ÔûÂ DEBU 07b Disconnected connection for 172.17.0.2:37180 => 172.17.0.4:5900[0m
+[36m14:21:33.220 honeytrap/server ÔûÂ DEBU 07c Accepted connection for 172.17.0.2:46574 => 172.17.0.4:5900[0m
+[36m14:21:33.220 honeytrap/server ÔûÂ DEBU 07d Handling connection for 172.17.0.2:46574 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:33.220734792 +0000 UTC m=+322.913192012, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=46574, telnet.sessionid=dc440r8m92dg00ard50g, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:21:33.223095891 +0000 UTC m=+322.915553011, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=46574, telnet.password=, telnet.sessionid=dc440r8m92dg00ard50g, telnet.username=OPTIONS / RTSP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:21:38.227 honeytrap/server ÔûÂ DEBU 07e Disconnected connection for 172.17.0.2:46574 => 172.17.0.4:5900[0m
+[36m14:21:38.227 honeytrap/server ÔûÂ DEBU 07f Accepted connection for 172.17.0.2:46588 => 172.17.0.4:5900[0m
+[36m14:21:38.227 honeytrap/server ÔûÂ DEBU 080 Handling connection for 172.17.0.2:46588 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:38.227671776 +0000 UTC m=+327.920128796, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=46588, telnet.sessionid=dc440sgm92dg00ard510, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:21:40.520544965 +0000 UTC m=+330.213002185, sensor=honeytrap, sequence=10, token=dc43uagm92dg00ard4dg, type=info
+[31m14:21:42.193 honeytrap/server ÔûÂ ERRO 081 Error handling service: ssh-simulator: read tcp 172.17.0.4:8022->172.17.0.2:40378: i/o timeout[0m
+[36m14:21:42.193 honeytrap/server ÔûÂ DEBU 083 Disconnected connection for 172.17.0.2:40378 => 172.17.0.4:8022[0m
+[31m14:21:42.193 honeytrap/server ÔûÂ ERRO 082 Error handling service: ssh-simulator: read tcp 172.17.0.4:8023->172.17.0.2:58396: i/o timeout[0m
+[36m14:21:42.193 honeytrap/server ÔûÂ DEBU 084 Disconnected connection for 172.17.0.2:58396 => 172.17.0.4:8023[0m
+[36m14:21:43.233 honeytrap/server ÔûÂ DEBU 085 Disconnected connection for 172.17.0.2:46588 => 172.17.0.4:5900[0m
+[36m14:21:43.234 honeytrap/server ÔûÂ DEBU 086 Accepted connection for 172.17.0.2:45082 => 172.17.0.4:5900[0m
+[36m14:21:43.234 honeytrap/server ÔûÂ DEBU 087 Handling connection for 172.17.0.2:45082 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:43.234779989 +0000 UTC m=+332.927237209, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45082, telnet.sessionid=dc440tom92dg00ard51g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:21:48.240 honeytrap/server ÔûÂ DEBU 088 Disconnected connection for 172.17.0.2:45082 => 172.17.0.4:5900[0m
+[36m14:21:48.240 honeytrap/server ÔûÂ DEBU 089 Accepted connection for 172.17.0.2:45086 => 172.17.0.4:5900[0m
+[36m14:21:48.240 honeytrap/server ÔûÂ DEBU 08a Handling connection for 172.17.0.2:45086 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:48.240644111 +0000 UTC m=+337.933101231, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45086, telnet.sessionid=dc440v0m92dg00ard520, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:21:53.246 honeytrap/server ÔûÂ DEBU 08b Disconnected connection for 172.17.0.2:45086 => 172.17.0.4:5900[0m
+[36m14:21:53.247 honeytrap/server ÔûÂ DEBU 08c Accepted connection for 172.17.0.2:40880 => 172.17.0.4:5900[0m
+[36m14:21:53.247 honeytrap/server ÔûÂ DEBU 08d Handling connection for 172.17.0.2:40880 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:21:53.247775139 +0000 UTC m=+342.940232259, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=40880, telnet.sessionid=dc44108m92dg00ard52g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:22:00.753 honeytrap/server ÔûÂ DEBU 08e Disconnected connection for 172.17.0.2:40880 => 172.17.0.4:5900[0m
+[36m14:22:00.754 honeytrap/server ÔûÂ DEBU 08f Accepted connection for 172.17.0.2:55980 => 172.17.0.4:5900[0m
+[36m14:22:00.754 honeytrap/server ÔûÂ DEBU 090 Handling connection for 172.17.0.2:55980 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:00.754266119 +0000 UTC m=+350.446723239, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55980, telnet.sessionid=dc44120m92dg00ard530, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:22:05.760 honeytrap/server ÔûÂ DEBU 091 Disconnected connection for 172.17.0.2:55980 => 172.17.0.4:5900[0m
+[36m14:22:05.760 honeytrap/server ÔûÂ DEBU 092 Accepted connection for 172.17.0.2:55992 => 172.17.0.4:5900[0m
+[36m14:22:05.760 honeytrap/server ÔûÂ DEBU 093 Handling connection for 172.17.0.2:55992 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:05.760792986 +0000 UTC m=+355.453250106, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55992, telnet.sessionid=dc44138m92dg00ard53g, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:22:10.519854567 +0000 UTC m=+360.212311687, sensor=honeytrap, sequence=11, token=dc43uagm92dg00ard4dg, type=info
+[36m14:22:10.767 honeytrap/server ÔûÂ DEBU 094 Disconnected connection for 172.17.0.2:55992 => 172.17.0.4:5900[0m
+[36m14:22:10.770 honeytrap/server ÔûÂ DEBU 095 Accepted connection for 172.17.0.2:37620 => 172.17.0.4:5900[0m
+[36m14:22:10.770 honeytrap/server ÔûÂ DEBU 096 Handling connection for 172.17.0.2:37620 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:10.770334301 +0000 UTC m=+360.462791421, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37620, telnet.sessionid=dc4414gm92dg00ard540, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:22:15.774 honeytrap/server ÔûÂ DEBU 097 Disconnected connection for 172.17.0.2:37620 => 172.17.0.4:5900[0m
+[36m14:22:15.774 honeytrap/server ÔûÂ DEBU 098 Accepted connection for 172.17.0.2:37636 => 172.17.0.4:5900[0m
+[36m14:22:15.774 honeytrap/server ÔûÂ DEBU 099 Handling connection for 172.17.0.2:37636 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:15.774940196 +0000 UTC m=+365.467397316, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37636, telnet.sessionid=dc4415om92dg00ard54g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:22:20.780 honeytrap/server ÔûÂ DEBU 09a Disconnected connection for 172.17.0.2:37636 => 172.17.0.4:5900[0m
+[36m14:22:20.781 honeytrap/server ÔûÂ DEBU 09b Accepted connection for 172.17.0.2:44870 => 172.17.0.4:5900[0m
+[36m14:22:20.781 honeytrap/server ÔûÂ DEBU 09c Handling connection for 172.17.0.2:44870 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:20.781290656 +0000 UTC m=+370.473747776, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=44870, telnet.sessionid=dc44170m92dg00ard550, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:22:25.786 honeytrap/server ÔûÂ DEBU 09d Disconnected connection for 172.17.0.2:44870 => 172.17.0.4:5900[0m
+[36m14:22:25.787 honeytrap/server ÔûÂ DEBU 09e Accepted connection for 172.17.0.2:44874 => 172.17.0.4:5900[0m
+[36m14:22:25.787 honeytrap/server ÔûÂ DEBU 09f Handling connection for 172.17.0.2:44874 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:25.787461431 +0000 UTC m=+375.479918551, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=44874, telnet.sessionid=dc44188m92dg00ard55g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:22:30.792 honeytrap/server ÔûÂ DEBU 0a0 Disconnected connection for 172.17.0.2:44874 => 172.17.0.4:5900[0m
+[36m14:22:30.793 honeytrap/server ÔûÂ DEBU 0a1 Accepted connection for 172.17.0.2:55218 => 172.17.0.4:5900[0m
+[36m14:22:30.793 honeytrap/server ÔûÂ DEBU 0a2 Handling connection for 172.17.0.2:55218 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:30.793622979 +0000 UTC m=+380.486080099, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55218, telnet.sessionid=dc4419gm92dg00ard560, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:22:30.795532513 +0000 UTC m=+380.487989633, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55218, telnet.password=, telnet.sessionid=dc4419gm92dg00ard560, telnet.username=GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:22:35.799 honeytrap/server ÔûÂ DEBU 0a3 Disconnected connection for 172.17.0.2:55218 => 172.17.0.4:5900[0m
+[36m14:22:35.800 honeytrap/server ÔûÂ DEBU 0a4 Accepted connection for 172.17.0.2:55230 => 172.17.0.4:5900[0m
+[36m14:22:35.800 honeytrap/server ÔûÂ DEBU 0a5 Handling connection for 172.17.0.2:55230 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:35.800578276 +0000 UTC m=+385.493035396, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55230, telnet.sessionid=dc441aom92dg00ard56g, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:22:40.520532597 +0000 UTC m=+390.212989817, sensor=honeytrap, sequence=12, token=dc43uagm92dg00ard4dg, type=info
+[36m14:22:40.806 honeytrap/server ÔûÂ DEBU 0a6 Disconnected connection for 172.17.0.2:55230 => 172.17.0.4:5900[0m
+[36m14:22:40.807 honeytrap/server ÔûÂ DEBU 0a7 Accepted connection for 172.17.0.2:51580 => 172.17.0.4:5900[0m
+[36m14:22:40.807 honeytrap/server ÔûÂ DEBU 0a8 Handling connection for 172.17.0.2:51580 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:40.807522503 +0000 UTC m=+390.499979623, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=51580, telnet.sessionid=dc441c0m92dg00ard570, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:22:45.813 honeytrap/server ÔûÂ DEBU 0a9 Disconnected connection for 172.17.0.2:51580 => 172.17.0.4:5900[0m
+[36m14:22:45.813 honeytrap/server ÔûÂ DEBU 0aa Accepted connection for 172.17.0.2:51584 => 172.17.0.4:5900[0m
+[36m14:22:45.813 honeytrap/server ÔûÂ DEBU 0ab Handling connection for 172.17.0.2:51584 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:45.813471256 +0000 UTC m=+395.505928376, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=51584, telnet.sessionid=dc441d8m92dg00ard57g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:22:50.819 honeytrap/server ÔûÂ DEBU 0ac Disconnected connection for 172.17.0.2:51584 => 172.17.0.4:5900[0m
+[36m14:22:50.819 honeytrap/server ÔûÂ DEBU 0ad Accepted connection for 172.17.0.2:47530 => 172.17.0.4:5900[0m
+[36m14:22:50.819 honeytrap/server ÔûÂ DEBU 0ae Handling connection for 172.17.0.2:47530 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:50.819578489 +0000 UTC m=+400.512035609, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820345588 +0000 UTC m=+400.512802608, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.password=Via: SIP/2.0/TCP nm;branch=foo, telnet.sessionid=dc441egm92dg00ard580, telnet.username=OPTIONS sip:nm SIP/2.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820407587 +0000 UTC m=+400.512864607, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=From: <sip:nm@nm>;tag=root, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820430987 +0000 UTC m=+400.512888107, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=To: <sip:nm2@nm2>, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820446987 +0000 UTC m=+400.512904107, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=Call-ID: 50000, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820463387 +0000 UTC m=+400.512920407, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=CSeq: 42 OPTIONS, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820499287 +0000 UTC m=+400.512956307, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=Max-Forwards: 70, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820516987 +0000 UTC m=+400.512974007, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=Content-Length: 0, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820532487 +0000 UTC m=+400.512989607, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=Contact: <sip:nm@nm>, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820551287 +0000 UTC m=+400.513008307, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=Accept: application/sdp, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:22:50.820565587 +0000 UTC m=+400.513022707, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47530, telnet.command=, telnet.sessionid=dc441egm92dg00ard580, token=dc43uagm92dg00ard4dg, type=session
+[36m14:22:58.328 honeytrap/server ÔûÂ DEBU 0af Disconnected connection for 172.17.0.2:47530 => 172.17.0.4:5900[0m
+[36m14:22:58.329 honeytrap/server ÔûÂ DEBU 0b0 Accepted connection for 172.17.0.2:47546 => 172.17.0.4:5900[0m
+[36m14:22:58.329 honeytrap/server ÔûÂ DEBU 0b1 Handling connection for 172.17.0.2:47546 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:22:58.329550703 +0000 UTC m=+408.022007823, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=47546, telnet.sessionid=dc441ggm92dg00ard58g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:03.335 honeytrap/server ÔûÂ DEBU 0b2 Disconnected connection for 172.17.0.2:47546 => 172.17.0.4:5900[0m
+[36m14:23:03.336 honeytrap/server ÔûÂ DEBU 0b3 Accepted connection for 172.17.0.2:40082 => 172.17.0.4:5900[0m
+[36m14:23:03.336 honeytrap/server ÔûÂ DEBU 0b4 Handling connection for 172.17.0.2:40082 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:03.336417043 +0000 UTC m=+413.028874163, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=40082, telnet.sessionid=dc441hom92dg00ard590, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:08.342 honeytrap/server ÔûÂ DEBU 0b5 Disconnected connection for 172.17.0.2:40082 => 172.17.0.4:5900[0m
+[36m14:23:08.342 honeytrap/server ÔûÂ DEBU 0b6 Accepted connection for 172.17.0.2:40084 => 172.17.0.4:5900[0m
+[36m14:23:08.342 honeytrap/server ÔûÂ DEBU 0b7 Handling connection for 172.17.0.2:40084 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:08.342621232 +0000 UTC m=+418.035078352, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=40084, telnet.sessionid=dc441j0m92dg00ard59g, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:23:10.519524601 +0000 UTC m=+420.211981721, sensor=honeytrap, sequence=13, token=dc43uagm92dg00ard4dg, type=info
+[36m14:23:13.348 honeytrap/server ÔûÂ DEBU 0b8 Disconnected connection for 172.17.0.2:40084 => 172.17.0.4:5900[0m
+[36m14:23:13.348 honeytrap/server ÔûÂ DEBU 0b9 Accepted connection for 172.17.0.2:44788 => 172.17.0.4:5900[0m
+[36m14:23:13.348 honeytrap/server ÔûÂ DEBU 0ba Handling connection for 172.17.0.2:44788 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:13.349006737 +0000 UTC m=+423.041463857, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=44788, telnet.sessionid=dc441k8m92dg00ard5a0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:18.352 honeytrap/server ÔûÂ DEBU 0bb Disconnected connection for 172.17.0.2:44788 => 172.17.0.4:5900[0m
+[36m14:23:18.353 honeytrap/server ÔûÂ DEBU 0bc Accepted connection for 172.17.0.2:44800 => 172.17.0.4:5900[0m
+[36m14:23:18.353 honeytrap/server ÔûÂ DEBU 0bd Handling connection for 172.17.0.2:44800 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:18.353085928 +0000 UTC m=+428.045543048, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=44800, telnet.sessionid=dc441lgm92dg00ard5ag, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:20.766 honeytrap/server ÔûÂ DEBU 0be Accepted connection for 172.17.0.2:48400 => 172.17.0.4:5900[0m
+[36m14:23:20.766 honeytrap/server ÔûÂ DEBU 0bf Handling connection for 172.17.0.2:48400 => 172.17.0.4:5900 telnet(telnet)[0m
+[36m14:23:20.766 honeytrap/server ÔûÂ DEBU 0c0 Accepted connection for 172.17.0.2:58450 => 172.17.0.4:8022[0m
+[36m14:23:20.766 honeytrap/server ÔûÂ DEBU 0c1 Handling connection for 172.17.0.2:58450 => 172.17.0.4:8022 ssh-simulator(ssh-simulator)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:20.766322763 +0000 UTC m=+430.458779783, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=48400, telnet.sessionid=dc441m0m92dg00ard5b0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:20.766 honeytrap/server ÔûÂ DEBU 0c2 Accepted connection for 172.17.0.2:48872 => 172.17.0.4:8023[0m
+[36m14:23:20.766 honeytrap/server ÔûÂ DEBU 0c3 Handling connection for 172.17.0.2:48872 => 172.17.0.4:8023 ssh-simulator(ssh-simulator)[0m
+[36m14:23:23.358 honeytrap/server ÔûÂ DEBU 0c4 Disconnected connection for 172.17.0.2:44800 => 172.17.0.4:5900[0m
+[36m14:23:23.359 honeytrap/server ÔûÂ DEBU 0c5 Accepted connection for 172.17.0.2:48412 => 172.17.0.4:5900[0m
+[36m14:23:23.359 honeytrap/server ÔûÂ DEBU 0c6 Handling connection for 172.17.0.2:48412 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:23.359504205 +0000 UTC m=+433.051961225, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=48412, telnet.sessionid=dc441mom92dg00ard5cg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:23:26.773201024 +0000 UTC m=+436.465658044, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=48400, telnet.password=, telnet.sessionid=dc441m0m92dg00ard5b0, telnet.username=GET / HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:23:28.365 honeytrap/server ÔûÂ DEBU 0c7 Disconnected connection for 172.17.0.2:48412 => 172.17.0.4:5900[0m
+[36m14:23:28.365 honeytrap/server ÔûÂ DEBU 0c8 Accepted connection for 172.17.0.2:48422 => 172.17.0.4:5900[0m
+[36m14:23:28.365 honeytrap/server ÔûÂ DEBU 0c9 Handling connection for 172.17.0.2:48422 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:28.365552359 +0000 UTC m=+438.058009479, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=48422, telnet.sessionid=dc441o0m92dg00ard5d0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:31.778 honeytrap/server ÔûÂ DEBU 0ca Disconnected connection for 172.17.0.2:48400 => 172.17.0.4:5900[0m
+[36m14:23:31.779 honeytrap/server ÔûÂ DEBU 0cb Accepted connection for 172.17.0.2:33770 => 172.17.0.4:5900[0m
+[36m14:23:31.779 honeytrap/server ÔûÂ DEBU 0cc Handling connection for 172.17.0.2:33770 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:31.779617834 +0000 UTC m=+441.472074954, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33770, telnet.sessionid=dc441oom92dg00ard5dg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:23:31.781122134 +0000 UTC m=+441.473579154, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33770, telnet.password=, telnet.sessionid=dc441oom92dg00ard5dg, telnet.username=, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:23:33.368 honeytrap/server ÔûÂ DEBU 0cd Disconnected connection for 172.17.0.2:48422 => 172.17.0.4:5900[0m
+[36m14:23:33.369 honeytrap/server ÔûÂ DEBU 0ce Accepted connection for 172.17.0.2:33782 => 172.17.0.4:5900[0m
+[36m14:23:33.369 honeytrap/server ÔûÂ DEBU 0cf Handling connection for 172.17.0.2:33782 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:33.369321569 +0000 UTC m=+443.061778689, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33782, telnet.sessionid=dc441p8m92dg00ard5e0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:34.550 honeytrap/server ÔûÂ DEBU 0d0 Accepted connection for 172.17.0.2:33786 => 172.17.0.4:5900[0m
+[36m14:23:34.550 honeytrap/server ÔûÂ DEBU 0d1 Handling connection for 172.17.0.2:33786 => 172.17.0.4:5900 telnet(telnet)[0m
+[36m14:23:34.550 honeytrap/server ÔûÂ DEBU 0d2 Accepted connection for 172.17.0.2:60994 => 172.17.0.4:8022[0m
+[36m14:23:34.550 honeytrap/server ÔûÂ DEBU 0d3 Handling connection for 172.17.0.2:60994 => 172.17.0.4:8022 ssh-simulator(ssh-simulator)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:34.550387295 +0000 UTC m=+444.242844415, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33786, telnet.sessionid=dc441pgm92dg00ard5eg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:34.550 honeytrap/server ÔûÂ DEBU 0d4 Accepted connection for 172.17.0.2:41598 => 172.17.0.4:8023[0m
+[36m14:23:34.550 honeytrap/server ÔûÂ DEBU 0d5 Handling connection for 172.17.0.2:41598 => 172.17.0.4:8023 ssh-simulator(ssh-simulator)[0m
+[36m14:23:36.786 honeytrap/server ÔûÂ DEBU 0d6 Disconnected connection for 172.17.0.2:33770 => 172.17.0.4:5900[0m
+[36m14:23:36.786 honeytrap/server ÔûÂ DEBU 0d7 Accepted connection for 172.17.0.2:33792 => 172.17.0.4:5900[0m
+[36m14:23:36.786 honeytrap/server ÔûÂ DEBU 0d8 Handling connection for 172.17.0.2:33792 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:36.78664768 +0000 UTC m=+446.479104700, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33792, telnet.sessionid=dc441q0m92dg00ard5g0, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:23:36.78877678 +0000 UTC m=+446.481233900, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33792, telnet.password=, telnet.sessionid=dc441q0m92dg00ard5g0, telnet.username=OPTIONS / HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:23:38.375 honeytrap/server ÔûÂ DEBU 0d9 Disconnected connection for 172.17.0.2:33782 => 172.17.0.4:5900[0m
+[36m14:23:38.375 honeytrap/server ÔûÂ DEBU 0da Accepted connection for 172.17.0.2:33798 => 172.17.0.4:5900[0m
+[36m14:23:38.375 honeytrap/server ÔûÂ DEBU 0db Handling connection for 172.17.0.2:33798 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:38.375599842 +0000 UTC m=+448.068056862, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33798, telnet.sessionid=dc441qgm92dg00ard5gg, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:23:40.519886531 +0000 UTC m=+450.212343651, sensor=honeytrap, sequence=14, token=dc43uagm92dg00ard4dg, type=info
+services > telnet > category=telnet, date=2026-11-26 14:23:40.55939874 +0000 UTC m=+450.251855860, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33786, telnet.password=, telnet.sessionid=dc441pgm92dg00ard5eg, telnet.username=GET / HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:23:41.792 honeytrap/server ÔûÂ DEBU 0dc Disconnected connection for 172.17.0.2:33792 => 172.17.0.4:5900[0m
+[36m14:23:41.792 honeytrap/server ÔûÂ DEBU 0dd Accepted connection for 172.17.0.2:43868 => 172.17.0.4:5900[0m
+[36m14:23:41.793 honeytrap/server ÔûÂ DEBU 0de Handling connection for 172.17.0.2:43868 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:41.793218021 +0000 UTC m=+451.485675141, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43868, telnet.sessionid=dc441r8m92dg00ard5h0, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:23:41.796085621 +0000 UTC m=+451.488542741, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43868, telnet.password=, telnet.sessionid=dc441r8m92dg00ard5h0, telnet.username=OPTIONS / RTSP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:23:43.381 honeytrap/server ÔûÂ DEBU 0df Disconnected connection for 172.17.0.2:33798 => 172.17.0.4:5900[0m
+[36m14:23:43.381 honeytrap/server ÔûÂ DEBU 0e0 Accepted connection for 172.17.0.2:43876 => 172.17.0.4:5900[0m
+[36m14:23:43.381 honeytrap/server ÔûÂ DEBU 0e1 Handling connection for 172.17.0.2:43876 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:43.381383309 +0000 UTC m=+453.073840329, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43876, telnet.sessionid=dc441rom92dg00ard5hg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:45.563 honeytrap/server ÔûÂ DEBU 0e2 Disconnected connection for 172.17.0.2:33786 => 172.17.0.4:5900[0m
+[36m14:23:45.564 honeytrap/server ÔûÂ DEBU 0e3 Accepted connection for 172.17.0.2:43892 => 172.17.0.4:5900[0m
+[36m14:23:45.564 honeytrap/server ÔûÂ DEBU 0e4 Handling connection for 172.17.0.2:43892 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:45.564298774 +0000 UTC m=+455.256755894, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43892, telnet.sessionid=dc441s8m92dg00ard5i0, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:23:45.565885775 +0000 UTC m=+455.258342895, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43892, telnet.password=, telnet.sessionid=dc441s8m92dg00ard5i0, telnet.username=, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:23:46.799 honeytrap/server ÔûÂ DEBU 0e5 Disconnected connection for 172.17.0.2:43868 => 172.17.0.4:5900[0m
+[36m14:23:46.799 honeytrap/server ÔûÂ DEBU 0e6 Accepted connection for 172.17.0.2:43904 => 172.17.0.4:5900[0m
+[36m14:23:46.799 honeytrap/server ÔûÂ DEBU 0e7 Handling connection for 172.17.0.2:43904 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:46.799561924 +0000 UTC m=+456.492019044, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=43904, telnet.sessionid=dc441sgm92dg00ard5ig, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:48.386 honeytrap/server ÔûÂ DEBU 0e8 Disconnected connection for 172.17.0.2:43876 => 172.17.0.4:5900[0m
+[36m14:23:48.435 honeytrap/server ÔûÂ DEBU 0e9 Accepted connection for 172.17.0.2:984 => 172.17.0.4:5900[0m
+[36m14:23:48.435 honeytrap/server ÔûÂ DEBU 0ea Handling connection for 172.17.0.2:984 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:48.435352823 +0000 UTC m=+458.127809943, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=984, telnet.sessionid=dc441t0m92dg00ard5j0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:49.437 honeytrap/server ÔûÂ DEBU 0eb Disconnected connection for 172.17.0.2:984 => 172.17.0.4:5900[0m
+[36m14:23:50.570 honeytrap/server ÔûÂ DEBU 0ec Disconnected connection for 172.17.0.2:43892 => 172.17.0.4:5900[0m
+[36m14:23:50.570 honeytrap/server ÔûÂ DEBU 0ed Accepted connection for 172.17.0.2:37326 => 172.17.0.4:5900[0m
+[36m14:23:50.570 honeytrap/server ÔûÂ DEBU 0ee Handling connection for 172.17.0.2:37326 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:50.570674782 +0000 UTC m=+460.263131802, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37326, telnet.sessionid=dc441tgm92dg00ard5jg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:23:50.572025282 +0000 UTC m=+460.264482302, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37326, telnet.password=, telnet.sessionid=dc441tgm92dg00ard5jg, telnet.username=OPTIONS / HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[31m14:23:50.767 honeytrap/server ÔûÂ ERRO 0f0 Error handling service: ssh-simulator: read tcp 172.17.0.4:8022->172.17.0.2:58450: i/o timeout[0m
+[36m14:23:50.768 honeytrap/server ÔûÂ DEBU 0f1 Disconnected connection for 172.17.0.2:58450 => 172.17.0.4:8022[0m
+[31m14:23:50.767 honeytrap/server ÔûÂ ERRO 0ef Error handling service: ssh-simulator: read tcp 172.17.0.4:8023->172.17.0.2:48872: i/o timeout[0m
+[36m14:23:50.768 honeytrap/server ÔûÂ DEBU 0f2 Disconnected connection for 172.17.0.2:48872 => 172.17.0.4:8023[0m
+[36m14:23:51.805 honeytrap/server ÔûÂ DEBU 0f3 Disconnected connection for 172.17.0.2:43904 => 172.17.0.4:5900[0m
+[36m14:23:51.805 honeytrap/server ÔûÂ DEBU 0f4 Accepted connection for 172.17.0.2:37332 => 172.17.0.4:5900[0m
+[36m14:23:51.805 honeytrap/server ÔûÂ DEBU 0f5 Handling connection for 172.17.0.2:37332 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:51.805414961 +0000 UTC m=+461.497871981, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37332, telnet.sessionid=dc441tom92dg00ard5k0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:23:55.576 honeytrap/server ÔûÂ DEBU 0f6 Disconnected connection for 172.17.0.2:37326 => 172.17.0.4:5900[0m
+[36m14:23:55.576 honeytrap/server ÔûÂ DEBU 0f7 Accepted connection for 172.17.0.2:37344 => 172.17.0.4:5900[0m
+[36m14:23:55.576 honeytrap/server ÔûÂ DEBU 0f8 Handling connection for 172.17.0.2:37344 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:55.576970262 +0000 UTC m=+465.269427282, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37344, telnet.sessionid=dc441uom92dg00ard5kg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:23:55.577986263 +0000 UTC m=+465.270443283, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37344, telnet.password=, telnet.sessionid=dc441uom92dg00ard5kg, telnet.username=OPTIONS / RTSP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:23:56.811 honeytrap/server ÔûÂ DEBU 0f9 Disconnected connection for 172.17.0.2:37332 => 172.17.0.4:5900[0m
+[36m14:23:56.811 honeytrap/server ÔûÂ DEBU 0fa Accepted connection for 172.17.0.2:37350 => 172.17.0.4:5900[0m
+[36m14:23:56.811 honeytrap/server ÔûÂ DEBU 0fb Handling connection for 172.17.0.2:37350 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:23:56.811815558 +0000 UTC m=+466.504272578, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=37350, telnet.sessionid=dc441v0m92dg00ard5l0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:00.582 honeytrap/server ÔûÂ DEBU 0fc Disconnected connection for 172.17.0.2:37344 => 172.17.0.4:5900[0m
+[36m14:24:00.582 honeytrap/server ÔûÂ DEBU 0fd Accepted connection for 172.17.0.2:57094 => 172.17.0.4:5900[0m
+[36m14:24:00.583 honeytrap/server ÔûÂ DEBU 0fe Handling connection for 172.17.0.2:57094 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:00.583053862 +0000 UTC m=+470.275510882, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57094, telnet.sessionid=dc44200m92dg00ard5lg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:01.817 honeytrap/server ÔûÂ DEBU 0ff Disconnected connection for 172.17.0.2:37350 => 172.17.0.4:5900[0m
+[36m14:24:01.818 honeytrap/server ÔûÂ DEBU 100 Accepted connection for 172.17.0.2:57102 => 172.17.0.4:5900[0m
+[36m14:24:01.818 honeytrap/server ÔûÂ DEBU 101 Handling connection for 172.17.0.2:57102 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:01.818161326 +0000 UTC m=+471.510618446, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57102, telnet.sessionid=dc44208m92dg00ard5m0, token=dc43uagm92dg00ard4dg, type=connect
+[31m14:24:04.552 honeytrap/server ÔûÂ ERRO 102 Error handling service: ssh-simulator: read tcp 172.17.0.4:8022->172.17.0.2:60994: i/o timeout[0m
+[36m14:24:04.552 honeytrap/server ÔûÂ DEBU 104 Disconnected connection for 172.17.0.2:60994 => 172.17.0.4:8022[0m
+[31m14:24:04.552 honeytrap/server ÔûÂ ERRO 103 Error handling service: ssh-simulator: read tcp 172.17.0.4:8023->172.17.0.2:41598: i/o timeout[0m
+[36m14:24:04.552 honeytrap/server ÔûÂ DEBU 105 Disconnected connection for 172.17.0.2:41598 => 172.17.0.4:8023[0m
+[36m14:24:05.589 honeytrap/server ÔûÂ DEBU 106 Disconnected connection for 172.17.0.2:57094 => 172.17.0.4:5900[0m
+[36m14:24:05.589 honeytrap/server ÔûÂ DEBU 107 Accepted connection for 172.17.0.2:57114 => 172.17.0.4:5900[0m
+[36m14:24:05.589 honeytrap/server ÔûÂ DEBU 108 Handling connection for 172.17.0.2:57114 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:05.589506228 +0000 UTC m=+475.281963348, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57114, telnet.sessionid=dc44218m92dg00ard5mg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:09.326 honeytrap/server ÔûÂ DEBU 109 Disconnected connection for 172.17.0.2:57102 => 172.17.0.4:5900[0m
+[36m14:24:09.327 honeytrap/server ÔûÂ DEBU 10a Accepted connection for 172.17.0.2:57130 => 172.17.0.4:5900[0m
+[36m14:24:09.327 honeytrap/server ÔûÂ DEBU 10b Handling connection for 172.17.0.2:57130 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:09.327538614 +0000 UTC m=+479.019995634, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57130, telnet.sessionid=dc44228m92dg00ard5n0, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:24:10.520283976 +0000 UTC m=+480.212741096, sensor=honeytrap, sequence=15, token=dc43uagm92dg00ard4dg, type=info
+[36m14:24:10.595 honeytrap/server ÔûÂ DEBU 10c Disconnected connection for 172.17.0.2:57114 => 172.17.0.4:5900[0m
+[36m14:24:10.596 honeytrap/server ÔûÂ DEBU 10d Accepted connection for 172.17.0.2:50158 => 172.17.0.4:5900[0m
+[36m14:24:10.596 honeytrap/server ÔûÂ DEBU 10e Handling connection for 172.17.0.2:50158 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:10.59608338 +0000 UTC m=+480.288540400, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=50158, telnet.sessionid=dc4422gm92dg00ard5ng, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:14.332 honeytrap/server ÔûÂ DEBU 10f Disconnected connection for 172.17.0.2:57130 => 172.17.0.4:5900[0m
+[36m14:24:14.333 honeytrap/server ÔûÂ DEBU 110 Accepted connection for 172.17.0.2:50160 => 172.17.0.4:5900[0m
+[36m14:24:14.333 honeytrap/server ÔûÂ DEBU 111 Handling connection for 172.17.0.2:50160 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:14.333086173 +0000 UTC m=+484.025543293, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=50160, telnet.sessionid=dc4423gm92dg00ard5o0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:15.602 honeytrap/server ÔûÂ DEBU 112 Disconnected connection for 172.17.0.2:50158 => 172.17.0.4:5900[0m
+[36m14:24:15.602 honeytrap/server ÔûÂ DEBU 113 Accepted connection for 172.17.0.2:50174 => 172.17.0.4:5900[0m
+[36m14:24:15.602 honeytrap/server ÔûÂ DEBU 114 Handling connection for 172.17.0.2:50174 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:15.602932188 +0000 UTC m=+485.295389308, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=50174, telnet.sessionid=dc4423om92dg00ard5og, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:19.338 honeytrap/server ÔûÂ DEBU 115 Disconnected connection for 172.17.0.2:50160 => 172.17.0.4:5900[0m
+[36m14:24:19.339 honeytrap/server ÔûÂ DEBU 116 Accepted connection for 172.17.0.2:50186 => 172.17.0.4:5900[0m
+[36m14:24:19.339 honeytrap/server ÔûÂ DEBU 117 Handling connection for 172.17.0.2:50186 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:19.339413879 +0000 UTC m=+489.031870899, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=50186, telnet.sessionid=dc4424om92dg00ard5p0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:23.111 honeytrap/server ÔûÂ DEBU 118 Disconnected connection for 172.17.0.2:50174 => 172.17.0.4:5900[0m
+[36m14:24:23.112 honeytrap/server ÔûÂ DEBU 119 Accepted connection for 172.17.0.2:55034 => 172.17.0.4:5900[0m
+[36m14:24:23.112 honeytrap/server ÔûÂ DEBU 11a Handling connection for 172.17.0.2:55034 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:23.112557023 +0000 UTC m=+492.805014143, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55034, telnet.sessionid=dc4425om92dg00ard5pg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:24.345 honeytrap/server ÔûÂ DEBU 11b Disconnected connection for 172.17.0.2:50186 => 172.17.0.4:5900[0m
+[36m14:24:24.346 honeytrap/server ÔûÂ DEBU 11c Accepted connection for 172.17.0.2:55038 => 172.17.0.4:5900[0m
+[36m14:24:24.346 honeytrap/server ÔûÂ DEBU 11d Handling connection for 172.17.0.2:55038 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:24.346262694 +0000 UTC m=+494.038719814, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55038, telnet.sessionid=dc44260m92dg00ard5q0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:28.119 honeytrap/server ÔûÂ DEBU 11e Disconnected connection for 172.17.0.2:55034 => 172.17.0.4:5900[0m
+[36m14:24:28.119 honeytrap/server ÔûÂ DEBU 11f Accepted connection for 172.17.0.2:55046 => 172.17.0.4:5900[0m
+[36m14:24:28.120 honeytrap/server ÔûÂ DEBU 120 Handling connection for 172.17.0.2:55046 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:28.120051398 +0000 UTC m=+497.812508518, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55046, telnet.sessionid=dc44270m92dg00ard5qg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:29.352 honeytrap/server ÔûÂ DEBU 121 Disconnected connection for 172.17.0.2:55038 => 172.17.0.4:5900[0m
+[36m14:24:29.352 honeytrap/server ÔûÂ DEBU 122 Accepted connection for 172.17.0.2:55060 => 172.17.0.4:5900[0m
+[36m14:24:29.352 honeytrap/server ÔûÂ DEBU 123 Handling connection for 172.17.0.2:55060 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:29.352470668 +0000 UTC m=+499.044927788, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55060, telnet.sessionid=dc44278m92dg00ard5r0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:33.125 honeytrap/server ÔûÂ DEBU 124 Disconnected connection for 172.17.0.2:55046 => 172.17.0.4:5900[0m
+[36m14:24:33.125 honeytrap/server ÔûÂ DEBU 125 Accepted connection for 172.17.0.2:55364 => 172.17.0.4:5900[0m
+[36m14:24:33.125 honeytrap/server ÔûÂ DEBU 126 Handling connection for 172.17.0.2:55364 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:33.125856282 +0000 UTC m=+502.818313302, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55364, telnet.sessionid=dc44288m92dg00ard5rg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:34.358 honeytrap/server ÔûÂ DEBU 127 Disconnected connection for 172.17.0.2:55060 => 172.17.0.4:5900[0m
+[36m14:24:34.359 honeytrap/server ÔûÂ DEBU 128 Accepted connection for 172.17.0.2:55374 => 172.17.0.4:5900[0m
+[36m14:24:34.359 honeytrap/server ÔûÂ DEBU 129 Handling connection for 172.17.0.2:55374 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:34.359889816 +0000 UTC m=+504.052346936, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55374, telnet.sessionid=dc4428gm92dg00ard5s0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:38.127 honeytrap/server ÔûÂ DEBU 12a Disconnected connection for 172.17.0.2:55364 => 172.17.0.4:5900[0m
+[36m14:24:38.127 honeytrap/server ÔûÂ DEBU 12b Accepted connection for 172.17.0.2:55388 => 172.17.0.4:5900[0m
+[36m14:24:38.127 honeytrap/server ÔûÂ DEBU 12c Handling connection for 172.17.0.2:55388 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:38.12787912 +0000 UTC m=+507.820336240, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55388, telnet.sessionid=dc4429gm92dg00ard5sg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:39.365 honeytrap/server ÔûÂ DEBU 12d Disconnected connection for 172.17.0.2:55374 => 172.17.0.4:5900[0m
+[36m14:24:39.365 honeytrap/server ÔûÂ DEBU 12e Accepted connection for 172.17.0.2:55390 => 172.17.0.4:5900[0m
+[36m14:24:39.365 honeytrap/server ÔûÂ DEBU 12f Handling connection for 172.17.0.2:55390 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:39.365789667 +0000 UTC m=+509.058246787, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55390, telnet.sessionid=dc4429om92dg00ard5t0, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:24:39.367343266 +0000 UTC m=+509.059800386, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=55390, telnet.password=, telnet.sessionid=dc4429om92dg00ard5t0, telnet.username=GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:24:40.520094205 +0000 UTC m=+510.212551325, sensor=honeytrap, sequence=16, token=dc43uagm92dg00ard4dg, type=info
+[36m14:24:43.133 honeytrap/server ÔûÂ DEBU 130 Disconnected connection for 172.17.0.2:55388 => 172.17.0.4:5900[0m
+[36m14:24:43.134 honeytrap/server ÔûÂ DEBU 131 Accepted connection for 172.17.0.2:60294 => 172.17.0.4:5900[0m
+[36m14:24:43.134 honeytrap/server ÔûÂ DEBU 132 Handling connection for 172.17.0.2:60294 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:43.134352035 +0000 UTC m=+512.826809155, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=60294, telnet.sessionid=dc442aom92dg00ard5tg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:44.371 honeytrap/server ÔûÂ DEBU 133 Disconnected connection for 172.17.0.2:55390 => 172.17.0.4:5900[0m
+[36m14:24:44.371 honeytrap/server ÔûÂ DEBU 134 Accepted connection for 172.17.0.2:60308 => 172.17.0.4:5900[0m
+[36m14:24:44.371 honeytrap/server ÔûÂ DEBU 135 Handling connection for 172.17.0.2:60308 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:44.371356534 +0000 UTC m=+514.063813554, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=60308, telnet.sessionid=dc442b0m92dg00ard5u0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:48.140 honeytrap/server ÔûÂ DEBU 136 Disconnected connection for 172.17.0.2:60294 => 172.17.0.4:5900[0m
+[36m14:24:48.140 honeytrap/server ÔûÂ DEBU 137 Accepted connection for 172.17.0.2:60320 => 172.17.0.4:5900[0m
+[36m14:24:48.140 honeytrap/server ÔûÂ DEBU 138 Handling connection for 172.17.0.2:60320 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:48.141028424 +0000 UTC m=+517.833485544, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=60320, telnet.sessionid=dc442c0m92dg00ard5ug, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:49.377 honeytrap/server ÔûÂ DEBU 139 Disconnected connection for 172.17.0.2:60308 => 172.17.0.4:5900[0m
+[36m14:24:49.377 honeytrap/server ÔûÂ DEBU 13a Accepted connection for 172.17.0.2:60326 => 172.17.0.4:5900[0m
+[36m14:24:49.377 honeytrap/server ÔûÂ DEBU 13b Handling connection for 172.17.0.2:60326 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:49.377863766 +0000 UTC m=+519.070320886, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=60326, telnet.sessionid=dc442c8m92dg00ard5v0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:53.146 honeytrap/server ÔûÂ DEBU 13c Disconnected connection for 172.17.0.2:60320 => 172.17.0.4:5900[0m
+[36m14:24:53.147 honeytrap/server ÔûÂ DEBU 13d Accepted connection for 172.17.0.2:59016 => 172.17.0.4:5900[0m
+[36m14:24:53.147 honeytrap/server ÔûÂ DEBU 13e Handling connection for 172.17.0.2:59016 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:53.147713392 +0000 UTC m=+522.840170512, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59016, telnet.sessionid=dc442d8m92dg00ard5vg, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:24:53.148818892 +0000 UTC m=+522.841276012, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59016, telnet.password=, telnet.sessionid=dc442d8m92dg00ard5vg, telnet.username=GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+[36m14:24:54.384 honeytrap/server ÔûÂ DEBU 13f Disconnected connection for 172.17.0.2:60326 => 172.17.0.4:5900[0m
+[36m14:24:54.384 honeytrap/server ÔûÂ DEBU 140 Accepted connection for 172.17.0.2:59026 => 172.17.0.4:5900[0m
+[36m14:24:54.384 honeytrap/server ÔûÂ DEBU 141 Handling connection for 172.17.0.2:59026 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:54.384810267 +0000 UTC m=+524.077267387, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59026, telnet.sessionid=dc442dgm92dg00ard600, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:58.153 honeytrap/server ÔûÂ DEBU 142 Disconnected connection for 172.17.0.2:59016 => 172.17.0.4:5900[0m
+[36m14:24:58.154 honeytrap/server ÔûÂ DEBU 143 Accepted connection for 172.17.0.2:59036 => 172.17.0.4:5900[0m
+[36m14:24:58.154 honeytrap/server ÔûÂ DEBU 144 Handling connection for 172.17.0.2:59036 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:58.154439956 +0000 UTC m=+527.846897176, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59036, telnet.sessionid=dc442egm92dg00ard60g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:24:59.391 honeytrap/server ÔûÂ DEBU 145 Disconnected connection for 172.17.0.2:59026 => 172.17.0.4:5900[0m
+[36m14:24:59.391 honeytrap/server ÔûÂ DEBU 146 Accepted connection for 172.17.0.2:59038 => 172.17.0.4:5900[0m
+[36m14:24:59.391 honeytrap/server ÔûÂ DEBU 147 Handling connection for 172.17.0.2:59038 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:24:59.391890382 +0000 UTC m=+529.084347502, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:24:59.393510781 +0000 UTC m=+529.085967901, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.password=Via: SIP/2.0/TCP nm;branch=foo, telnet.sessionid=dc442eom92dg00ard610, telnet.username=OPTIONS sip:nm SIP/2.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+services > telnet > category=telnet, date=2026-11-26 14:24:59.393811581 +0000 UTC m=+529.086268701, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=From: <sip:nm@nm>;tag=root, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:24:59.393893481 +0000 UTC m=+529.086350701, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=To: <sip:nm2@nm2>, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:24:59.394023681 +0000 UTC m=+529.086480801, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=Call-ID: 50000, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:24:59.394286081 +0000 UTC m=+529.086743201, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=CSeq: 42 OPTIONS, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:24:59.394347881 +0000 UTC m=+529.086805001, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=Max-Forwards: 70, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:24:59.394402881 +0000 UTC m=+529.086860001, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=Content-Length: 0, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:24:59.394463781 +0000 UTC m=+529.086920901, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=Contact: <sip:nm@nm>, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:24:59.394513381 +0000 UTC m=+529.086970501, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=Accept: application/sdp, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:24:59.394559081 +0000 UTC m=+529.087016301, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=59038, telnet.command=, telnet.sessionid=dc442eom92dg00ard610, token=dc43uagm92dg00ard4dg, type=session
+[36m14:25:03.160 honeytrap/server ÔûÂ DEBU 148 Disconnected connection for 172.17.0.2:59036 => 172.17.0.4:5900[0m
+[36m14:25:03.161 honeytrap/server ÔûÂ DEBU 149 Accepted connection for 172.17.0.2:57788 => 172.17.0.4:5900[0m
+[36m14:25:03.161 honeytrap/server ÔûÂ DEBU 14a Handling connection for 172.17.0.2:57788 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:03.161780115 +0000 UTC m=+532.854237235, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57788, telnet.sessionid=dc442fom92dg00ard61g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:06.899 honeytrap/server ÔûÂ DEBU 14b Disconnected connection for 172.17.0.2:59038 => 172.17.0.4:5900[0m
+[36m14:25:06.900 honeytrap/server ÔûÂ DEBU 14c Accepted connection for 172.17.0.2:57792 => 172.17.0.4:5900[0m
+[36m14:25:06.900 honeytrap/server ÔûÂ DEBU 14d Handling connection for 172.17.0.2:57792 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:06.900508962 +0000 UTC m=+536.592966082, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57792, telnet.sessionid=dc442ggm92dg00ard620, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:08.168 honeytrap/server ÔûÂ DEBU 14e Disconnected connection for 172.17.0.2:57788 => 172.17.0.4:5900[0m
+[36m14:25:08.168 honeytrap/server ÔûÂ DEBU 14f Accepted connection for 172.17.0.2:57806 => 172.17.0.4:5900[0m
+[36m14:25:08.168 honeytrap/server ÔûÂ DEBU 150 Handling connection for 172.17.0.2:57806 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:08.16871518 +0000 UTC m=+537.861172300, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57806, telnet.sessionid=dc442h0m92dg00ard62g, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:25:10.519675078 +0000 UTC m=+540.212132198, sensor=honeytrap, sequence=17, token=dc43uagm92dg00ard4dg, type=info
+[36m14:25:11.906 honeytrap/server ÔûÂ DEBU 151 Disconnected connection for 172.17.0.2:57792 => 172.17.0.4:5900[0m
+[36m14:25:11.906 honeytrap/server ÔûÂ DEBU 152 Accepted connection for 172.17.0.2:33334 => 172.17.0.4:5900[0m
+[36m14:25:11.907 honeytrap/server ÔûÂ DEBU 153 Handling connection for 172.17.0.2:33334 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:11.907379163 +0000 UTC m=+541.599836383, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33334, telnet.sessionid=dc442hom92dg00ard630, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:13.174 honeytrap/server ÔûÂ DEBU 154 Disconnected connection for 172.17.0.2:57806 => 172.17.0.4:5900[0m
+[36m14:25:13.175 honeytrap/server ÔûÂ DEBU 155 Accepted connection for 172.17.0.2:33338 => 172.17.0.4:5900[0m
+[36m14:25:13.175 honeytrap/server ÔûÂ DEBU 156 Handling connection for 172.17.0.2:33338 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:13.175145966 +0000 UTC m=+542.867603086, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=connect
+services > telnet > category=telnet, date=2026-11-26 14:25:13.177095865 +0000 UTC m=+542.869552985, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.password=Via: SIP/2.0/TCP nm;branch=foo, telnet.sessionid=dc442i8m92dg00ard63g, telnet.username=OPTIONS sip:nm SIP/2.0, token=dc43uagm92dg00ard4dg, type=password-authentication
+services > telnet > category=telnet, date=2026-11-26 14:25:13.177342365 +0000 UTC m=+542.869799485, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=From: <sip:nm@nm>;tag=root, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:25:13.177550365 +0000 UTC m=+542.870007585, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=To: <sip:nm2@nm2>, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:25:13.177670365 +0000 UTC m=+542.870127485, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=Call-ID: 50000, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:25:13.177784365 +0000 UTC m=+542.870241585, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=CSeq: 42 OPTIONS, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:25:13.177919065 +0000 UTC m=+542.870376285, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=Max-Forwards: 70, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:25:13.178027965 +0000 UTC m=+542.870485185, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=Content-Length: 0, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:25:13.178129765 +0000 UTC m=+542.870586985, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=Contact: <sip:nm@nm>, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:25:13.178234665 +0000 UTC m=+542.870691785, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=Accept: application/sdp, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+services > telnet > category=telnet, date=2026-11-26 14:25:13.178515765 +0000 UTC m=+542.870972885, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33338, telnet.command=, telnet.sessionid=dc442i8m92dg00ard63g, token=dc43uagm92dg00ard4dg, type=session
+[36m14:25:16.913 honeytrap/server ÔûÂ DEBU 157 Disconnected connection for 172.17.0.2:33334 => 172.17.0.4:5900[0m
+[36m14:25:16.913 honeytrap/server ÔûÂ DEBU 158 Accepted connection for 172.17.0.2:33340 => 172.17.0.4:5900[0m
+[36m14:25:16.913 honeytrap/server ÔûÂ DEBU 159 Handling connection for 172.17.0.2:33340 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:16.913950602 +0000 UTC m=+546.606407722, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=33340, telnet.sessionid=dc442j0m92dg00ard640, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:20.678 honeytrap/server ÔûÂ DEBU 15a Disconnected connection for 172.17.0.2:33338 => 172.17.0.4:5900[0m
+[36m14:25:20.678 honeytrap/server ÔûÂ DEBU 15b Accepted connection for 172.17.0.2:50538 => 172.17.0.4:5900[0m
+[36m14:25:20.678 honeytrap/server ÔûÂ DEBU 15c Handling connection for 172.17.0.2:50538 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:20.678709552 +0000 UTC m=+550.371166672, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=50538, telnet.sessionid=dc442k0m92dg00ard64g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:21.919 honeytrap/server ÔûÂ DEBU 15d Disconnected connection for 172.17.0.2:33340 => 172.17.0.4:5900[0m
+[36m14:25:21.919 honeytrap/server ÔûÂ DEBU 15e Accepted connection for 172.17.0.2:50548 => 172.17.0.4:5900[0m
+[36m14:25:21.920 honeytrap/server ÔûÂ DEBU 15f Handling connection for 172.17.0.2:50548 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:21.920096015 +0000 UTC m=+551.612553035, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=50548, telnet.sessionid=dc442k8m92dg00ard650, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:25.684 honeytrap/server ÔûÂ DEBU 160 Disconnected connection for 172.17.0.2:50538 => 172.17.0.4:5900[0m
+[36m14:25:25.685 honeytrap/server ÔûÂ DEBU 161 Accepted connection for 172.17.0.2:50558 => 172.17.0.4:5900[0m
+[36m14:25:25.685 honeytrap/server ÔûÂ DEBU 162 Handling connection for 172.17.0.2:50558 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:25.685370253 +0000 UTC m=+555.377827373, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=50558, telnet.sessionid=dc442l8m92dg00ard65g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:26.926 honeytrap/server ÔûÂ DEBU 163 Disconnected connection for 172.17.0.2:50548 => 172.17.0.4:5900[0m
+[36m14:25:26.926 honeytrap/server ÔûÂ DEBU 164 Accepted connection for 172.17.0.2:50564 => 172.17.0.4:5900[0m
+[36m14:25:26.927 honeytrap/server ÔûÂ DEBU 165 Handling connection for 172.17.0.2:50564 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:26.927486115 +0000 UTC m=+556.619943335, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=50564, telnet.sessionid=dc442lgm92dg00ard660, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:30.690 honeytrap/server ÔûÂ DEBU 166 Disconnected connection for 172.17.0.2:50558 => 172.17.0.4:5900[0m
+[36m14:25:30.690 honeytrap/server ÔûÂ DEBU 167 Accepted connection for 172.17.0.2:45054 => 172.17.0.4:5900[0m
+[36m14:25:30.690 honeytrap/server ÔûÂ DEBU 168 Handling connection for 172.17.0.2:45054 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:30.690872401 +0000 UTC m=+560.383329521, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45054, telnet.sessionid=dc442mgm92dg00ard66g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:31.931 honeytrap/server ÔûÂ DEBU 169 Disconnected connection for 172.17.0.2:50564 => 172.17.0.4:5900[0m
+[36m14:25:31.931 honeytrap/server ÔûÂ DEBU 16a Accepted connection for 172.17.0.2:45058 => 172.17.0.4:5900[0m
+[36m14:25:31.931 honeytrap/server ÔûÂ DEBU 16b Handling connection for 172.17.0.2:45058 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:31.931956767 +0000 UTC m=+561.624413887, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45058, telnet.sessionid=dc442mom92dg00ard670, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:35.697 honeytrap/server ÔûÂ DEBU 16c Disconnected connection for 172.17.0.2:45054 => 172.17.0.4:5900[0m
+[36m14:25:35.698 honeytrap/server ÔûÂ DEBU 16d Accepted connection for 172.17.0.2:45070 => 172.17.0.4:5900[0m
+[36m14:25:35.698 honeytrap/server ÔûÂ DEBU 16e Handling connection for 172.17.0.2:45070 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:35.698154463 +0000 UTC m=+565.390611583, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45070, telnet.sessionid=dc442nom92dg00ard67g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:36.937 honeytrap/server ÔûÂ DEBU 16f Disconnected connection for 172.17.0.2:45058 => 172.17.0.4:5900[0m
+[36m14:25:36.937 honeytrap/server ÔûÂ DEBU 170 Accepted connection for 172.17.0.2:45084 => 172.17.0.4:5900[0m
+[36m14:25:36.938 honeytrap/server ÔûÂ DEBU 171 Handling connection for 172.17.0.2:45084 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:36.938619947 +0000 UTC m=+566.631077067, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45084, telnet.sessionid=dc442o0m92dg00ard680, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:25:40.519953233 +0000 UTC m=+570.212410453, sensor=honeytrap, sequence=18, token=dc43uagm92dg00ard4dg, type=info
+[36m14:25:40.703 honeytrap/server ÔûÂ DEBU 172 Disconnected connection for 172.17.0.2:45070 => 172.17.0.4:5900[0m
+[36m14:25:40.704 honeytrap/server ÔûÂ DEBU 173 Accepted connection for 172.17.0.2:48678 => 172.17.0.4:5900[0m
+[36m14:25:40.704 honeytrap/server ÔûÂ DEBU 174 Handling connection for 172.17.0.2:48678 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:40.704219286 +0000 UTC m=+570.396676306, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=48678, telnet.sessionid=dc442p0m92dg00ard68g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:41.943 honeytrap/server ÔûÂ DEBU 175 Disconnected connection for 172.17.0.2:45084 => 172.17.0.4:5900[0m
+[36m14:25:41.943 honeytrap/server ÔûÂ DEBU 176 Accepted connection for 172.17.0.2:48690 => 172.17.0.4:5900[0m
+[36m14:25:41.943 honeytrap/server ÔûÂ DEBU 177 Handling connection for 172.17.0.2:48690 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:41.94385087 +0000 UTC m=+571.636307890, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=48690, telnet.sessionid=dc442p8m92dg00ard690, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:45.709 honeytrap/server ÔûÂ DEBU 178 Disconnected connection for 172.17.0.2:48678 => 172.17.0.4:5900[0m
+[36m14:25:45.710 honeytrap/server ÔûÂ DEBU 179 Accepted connection for 172.17.0.2:48706 => 172.17.0.4:5900[0m
+[36m14:25:45.710 honeytrap/server ÔûÂ DEBU 17a Handling connection for 172.17.0.2:48706 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:45.710539036 +0000 UTC m=+575.402996156, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=48706, telnet.sessionid=dc442q8m92dg00ard69g, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:46.949 honeytrap/server ÔûÂ DEBU 17b Disconnected connection for 172.17.0.2:48690 => 172.17.0.4:5900[0m
+[36m14:25:46.950 honeytrap/server ÔûÂ DEBU 17c Accepted connection for 172.17.0.2:48714 => 172.17.0.4:5900[0m
+[36m14:25:46.950 honeytrap/server ÔûÂ DEBU 17d Handling connection for 172.17.0.2:48714 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:46.950151732 +0000 UTC m=+576.642608752, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=48714, telnet.sessionid=dc442qgm92dg00ard6a0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:50.716 honeytrap/server ÔûÂ DEBU 17e Disconnected connection for 172.17.0.2:48706 => 172.17.0.4:5900[0m
+[36m14:25:50.716 honeytrap/server ÔûÂ DEBU 17f Accepted connection for 172.17.0.2:56086 => 172.17.0.4:5900[0m
+[36m14:25:50.716 honeytrap/server ÔûÂ DEBU 180 Handling connection for 172.17.0.2:56086 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:50.716540308 +0000 UTC m=+580.408997428, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=56086, telnet.sessionid=dc442rgm92dg00ard6ag, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:51.956 honeytrap/server ÔûÂ DEBU 181 Disconnected connection for 172.17.0.2:48714 => 172.17.0.4:5900[0m
+[36m14:25:51.957 honeytrap/server ÔûÂ DEBU 182 Accepted connection for 172.17.0.2:56090 => 172.17.0.4:5900[0m
+[36m14:25:51.957 honeytrap/server ÔûÂ DEBU 183 Handling connection for 172.17.0.2:56090 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:51.957338678 +0000 UTC m=+581.649795798, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=56090, telnet.sessionid=dc442rom92dg00ard6b0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:55.721 honeytrap/server ÔûÂ DEBU 184 Disconnected connection for 172.17.0.2:56086 => 172.17.0.4:5900[0m
+[36m14:25:55.722 honeytrap/server ÔûÂ DEBU 185 Accepted connection for 172.17.0.2:56096 => 172.17.0.4:5900[0m
+[36m14:25:55.722 honeytrap/server ÔûÂ DEBU 186 Handling connection for 172.17.0.2:56096 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:55.722250911 +0000 UTC m=+585.414707931, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=56096, telnet.sessionid=dc442som92dg00ard6bg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:56.963 honeytrap/server ÔûÂ DEBU 187 Disconnected connection for 172.17.0.2:56090 => 172.17.0.4:5900[0m
+[36m14:25:57.012 honeytrap/server ÔûÂ DEBU 188 Accepted connection for 172.17.0.2:755 => 172.17.0.4:5900[0m
+[36m14:25:57.012 honeytrap/server ÔûÂ DEBU 189 Handling connection for 172.17.0.2:755 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:25:57.012521157 +0000 UTC m=+586.704978177, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=755, telnet.sessionid=dc442t8m92dg00ard6c0, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:25:58.014 honeytrap/server ÔûÂ DEBU 18a Disconnected connection for 172.17.0.2:755 => 172.17.0.4:5900[0m
+[36m14:26:00.728 honeytrap/server ÔûÂ DEBU 18b Disconnected connection for 172.17.0.2:56096 => 172.17.0.4:5900[0m
+[36m14:26:00.728 honeytrap/server ÔûÂ DEBU 18c Accepted connection for 172.17.0.2:57310 => 172.17.0.4:5900[0m
+[36m14:26:00.728 honeytrap/server ÔûÂ DEBU 18d Handling connection for 172.17.0.2:57310 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:26:00.728464338 +0000 UTC m=+590.420921458, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57310, telnet.sessionid=dc442u0m92dg00ard6cg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:26:05.735 honeytrap/server ÔûÂ DEBU 18e Disconnected connection for 172.17.0.2:57310 => 172.17.0.4:5900[0m
+[36m14:26:05.735 honeytrap/server ÔûÂ DEBU 18f Accepted connection for 172.17.0.2:57324 => 172.17.0.4:5900[0m
+[36m14:26:05.735 honeytrap/server ÔûÂ DEBU 190 Handling connection for 172.17.0.2:57324 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:26:05.73569758 +0000 UTC m=+595.428154700, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=57324, telnet.sessionid=dc442v8m92dg00ard6d0, token=dc43uagm92dg00ard4dg, type=connect
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:26:10.520579953 +0000 UTC m=+600.213036973, sensor=honeytrap, sequence=19, token=dc43uagm92dg00ard4dg, type=info
+[36m14:26:10.740 honeytrap/server ÔûÂ DEBU 191 Disconnected connection for 172.17.0.2:57324 => 172.17.0.4:5900[0m
+[36m14:26:10.762 honeytrap/server ÔûÂ DEBU 192 Accepted connection for 172.17.0.2:840 => 172.17.0.4:5900[0m
+[36m14:26:10.762 honeytrap/server ÔûÂ DEBU 193 Handling connection for 172.17.0.2:840 => 172.17.0.4:5900 telnet(telnet)[0m
+services > telnet > category=telnet, date=2026-11-26 14:26:10.762468787 +0000 UTC m=+600.454925907, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=840, telnet.sessionid=dc4430gm92dg00ard6dg, token=dc43uagm92dg00ard4dg, type=connect
+[36m14:26:11.764 honeytrap/server ÔûÂ DEBU 194 Disconnected connection for 172.17.0.2:840 => 172.17.0.4:5900[0m
+honeytrap > heartbeat > category=heartbeat, date=2026-11-26 14:26:40.51992037 +0000 UTC m=+630.212377490, sensor=honeytrap, sequence=20, token=dc43uagm92dg00ard4dg, type=info
+[36m14:26:48.128 honeytrap/server ÔûÂ DEBU 195 Accepted connection for 172.17.0.2:45586 => 172.17.0.4:5900[0m
+[36m14:26:48.129 honeytrap/server ÔûÂ DEBU 196 Handling connection for 172.17.0.2:45586 => 172.17.0.4:5900 telnet(telnet)[0m
+[36m14:26:48.129 honeytrap/server ÔûÂ DEBU 197 Disconnected connection for 172.17.0.2:45586 => 172.17.0.4:5900[0m
+[36m14:26:48.129 honeytrap/server ÔûÂ DEBU 199 Accepted connection for 172.17.0.2:45240 => 172.17.0.4:8022[0m
+[36m14:26:48.129 honeytrap/server ÔûÂ DEBU 19a Handling connection for 172.17.0.2:45240 => 172.17.0.4:8022 ssh-simulator(ssh-simulator)[0m
+[31m14:26:48.129 honeytrap/server ÔûÂ ERRO 19b Error handling service: ssh-simulator: write tcp 172.17.0.4:8022->172.17.0.2:45240: write: connection reset by peer[0m
+[36m14:26:48.129 honeytrap/server ÔûÂ DEBU 19c Disconnected connection for 172.17.0.2:45240 => 172.17.0.4:8022[0m
+[36m14:26:48.129 honeytrap/server ÔûÂ DEBU 198 Accepted connection for 172.17.0.2:44810 => 172.17.0.4:8023[0m
+[36m14:26:48.129 honeytrap/server ÔûÂ DEBU 19d Handling connection for 172.17.0.2:44810 => 172.17.0.4:8023 ssh-simulator(ssh-simulator)[0m
+[31m14:26:48.129 honeytrap/server ÔûÂ ERRO 19e Error handling service: ssh-simulator: write tcp 172.17.0.4:8023->172.17.0.2:44810: write: connection reset by peer[0m
+[36m14:26:48.129 honeytrap/server ÔûÂ DEBU 19f Disconnected connection for 172.17.0.2:44810 => 172.17.0.4:8023[0m
+services > telnet > category=telnet, date=2026-11-26 14:26:48.129157649 +0000 UTC m=+637.821614769, destination-ip=172.17.0.4, destination-port=5900, sensor=services, source-ip=172.17.0.2, source-port=45586, telnet.sessionid=dc443a0m92dg00ard6e0, token=dc43uagm92dg00ard4dg, type=connect
+
