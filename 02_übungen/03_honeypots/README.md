@@ -119,13 +119,13 @@ Meine wichtigsten Erkenntnisse:
 
 ## 6. Vergleich mit Cowrie
 
-Mein Kollege Adlin hat für denselben Auftrag Cowrie genommen, einen SSH- und Telnet-Honeypot mit mittlerer Interaktion. So können wir die zwei gut vergleichen.
+Mein Kollege Aldin hat für denselben Auftrag Cowrie genommen, einen SSH- und Telnet-Honeypot mit mittlerer Interaktion. So können wir die zwei gut vergleichen.
 
 Bei Cowrie kann sich der Angreifer sogar einloggen und landet in einer nachgebauten Shell. Adlin hat von Kali aus getestet: Der Login `root/123456` wurde abgelehnt, `root/hunter2` hat geklappt. Danach konnte er Befehle absetzen wie `id`, `whoami`, `ls`, `cat /etc/passwd` und sogar einen Download mit `wget`. Cowrie hat die angreifende IP, alle probierten Benutzer und Passwörter und jeden einzelnen Befehl samt Download-Versuch mitgeloggt.
 
 Honeytrap arbeitet anders. Es simuliert die Dienste nur und lässt keine echte Shell zu. Dafür fängt es mehrere Ports und Dienste gleichzeitig ab.
 
-| | Cowrie (Adlin) | Honeytrap (ich) |
+| | Cowrie (Aldin) | Honeytrap (ich) |
 |---|---|---|
 | Interaktion | mittel, echte Fake-Shell | niedrig, nur Simulation |
 | Abdeckung | nur SSH und Telnet | mehrere Ports und Dienste |
