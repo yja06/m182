@@ -193,25 +193,23 @@ whoami   -> root
 
 ## 9. Resilienz Massnahmen
 
-Hier sind drei konkrete Massnahmen, die diesen Angriff auf der Seite des Zielsystems verhindert hätten.
+Drei Massnahmen, die den Angriff verhindert hätten.
 
-**1. Patchmanagement und Software nur aus vertrauenswürdigen Quellen**
+**1. Updates und Software aus sicherer Quelle**
 
-Die vsftpd Backdoor kam über ein manipuliertes Download-Archiv ins System. Wenn man Software nur aus den offiziellen Paketquellen installiert und die Signaturen bzw. Prüfsummen kontrolliert, fällt so eine Manipulation auf. Dazu gehört auch, Updates regelmässig einzuspielen, damit alte Versionen mit bekannten Lücken gar nicht erst laufen.
+Die Backdoor kam über ein manipuliertes Download-Paket ins System. Wenn man Software nur aus den offiziellen Quellen installiert und regelmässig Updates macht, läuft so eine alte, verseuchte Version gar nicht erst.
 
-**2. Angriffsfläche minimieren**
+**2. Nur nötige Dienste laufen lassen**
 
-Auf dem Zielsystem laufen viele Dienste, die niemand braucht, zum Beispiel Telnet, die r-Dienste auf 512 bis 514 und die Bind-Shell auf 1524. Jeder offene Dienst ist ein möglicher Einstiegspunkt. Was nicht gebraucht wird, sollte abgeschaltet und deinstalliert werden. So hätte der Angreifer gar nicht erst einen offenen FTP-Dienst mit dieser Version gefunden.
+Auf dem Ziel laufen viele Dienste, die niemand braucht, zum Beispiel Telnet, die r-Dienste auf 512 bis 514 und die Shell auf 1524. Jeder offene Dienst ist ein Risiko. Was man nicht braucht, schaltet man ab. Dann gibt es auch keinen alten FTP-Dienst zum Angreifen.
 
-**3. Firewall und Netzwerksegmentierung**
+**3. Firewall und Netz trennen**
 
-Mit einer Firewall lässt sich festlegen, dass nur die wirklich nötigen Ports von aussen erreichbar sind. Zusätzlich kann man das Zielsystem in ein eigenes Netzsegment stellen, das vom Rest getrennt ist. Selbst wenn ein Dienst übernommen wird, kommt der Angreifer dann nicht einfach überall hin.
+Eine Firewall lässt nur die Ports offen, die man wirklich braucht. Dazu stellt man das Ziel in ein eigenes Netz. Wird ein Dienst geknackt, kommt der Angreifer nicht gleich überall hin.
 
 ## 10. Fazit
 
-Mit Enumeration und Fingerprinting konnte ich das Zielsystem komplett abbilden, ohne vorher etwas darüber zu wissen. Ich habe alle aktiven Hosts gefunden und beim Ziel die offenen TCP- und UDP-Ports mit ihren Dienstversionen bestimmt. Dabei war schnell klar, dass das System sehr alte Software betreibt.
-
-Über die vsftpd 2.3.4 Backdoor habe ich gezeigt, wie aus so einer veralteten Version ein vollständiger Root-Zugriff wird. Die wichtigsten Gegenmassnahmen sind saubere und aktuelle Software, möglichst wenige offene Dienste und eine Firewall mit Netztrennung.
+Mit den Scans habe ich das Ziel komplett abgebildet, ohne vorher etwas darüber zu wissen. Alle offenen TCP- und UDP-Ports und ihre Versionen waren sichtbar, und die Software war alt. Über die vsftpd 2.3.4 Backdoor bin ich Root geworden. Am meisten hilft dagegen aktuelle Software, wenige offene Dienste und eine Firewall.
 
 ## 11. Quellen
 
