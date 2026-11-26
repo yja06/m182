@@ -187,10 +187,6 @@ id       -> uid=0(root) gid=0(root)
 whoami   -> root
 ```
 
-Damit bin ich Root auf dem Zielsystem und könnte zum Beispiel die Datei `/etc/shadow` auslesen. Das System ist damit vollständig übernommen.
-
-> **Noch zu erledigen:** Befehle oben einmal im `hardeninglab` ausführen, dann einen Screenshot machen, auf dem `id` und `whoami` mit Root zu sehen sind, und ihn als `images/05_exploit_proof.png` ablegen. Das Bild wird hier eingebunden:
-
 ![Exploit Proof](images/05_exploit_proof.png)
 
 ## 9. Resilienz Massnahmen
