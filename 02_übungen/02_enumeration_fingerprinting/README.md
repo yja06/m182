@@ -180,7 +180,7 @@ whoami
 uname -a
 ```
 
-**Erwartetes Ergebnis:**
+**Ergebnis:**
 
 ```
 id       -> uid=0(root) gid=0(root)
