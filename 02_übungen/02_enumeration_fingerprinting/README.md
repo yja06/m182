@@ -35,7 +35,8 @@ Das Labor läuft komplett lokal mit Docker. Es gibt zwei Container im selben Doc
 
 Netzwerk: 172.17.0.0/24, Gateway 172.17.0.1
 
-![Docker Setup](images/01_docker_setup.png)
+<img width="1546" height="544" alt="image" src="https://github.com/user-attachments/assets/6fe7ee8e-02ef-4fa2-bfa3-dc088c8c555d" />
+
 
 ## 3. Vorgehen
 
@@ -187,7 +188,8 @@ id       -> uid=0(root) gid=0(root)
 whoami   -> root
 ```
 
-![Exploit Proof](images/05_exploit_proof.png)
+<img width="1006" height="320" alt="image" src="https://github.com/user-attachments/assets/6a181683-7ace-42e0-aeff-fac469e2af8b" />
+
 
 ## 9. Resilienz Massnahmen
 
