@@ -7,8 +7,9 @@
 3. [Installation](#3-installation)
 4. [Testing](#4-testing)
 5. [Erkenntnisse](#5-erkenntnisse)
-6. [Fazit](#6-fazit)
-7. [Quellen](#7-quellen)
+6. [Vergleich mit Cowrie](#6-vergleich-mit-cowrie)
+7. [Fazit](#7-fazit)
+8. [Quellen](#8-quellen)
 
 ---
 
@@ -116,13 +117,30 @@ Meine wichtigsten Erkenntnisse:
 
 ![Honeytrap Log mit den aufgezeichneten Zugriffen](images/03_honeytrap_log.png)
 
-## 6. Fazit
+## 6. Vergleich mit Cowrie
+
+Mein Kollege Adlin hat für denselben Auftrag Cowrie genommen, einen SSH- und Telnet-Honeypot mit mittlerer Interaktion. So können wir die zwei gut vergleichen.
+
+Bei Cowrie kann sich der Angreifer sogar einloggen und landet in einer nachgebauten Shell. Adlin hat von Kali aus getestet: Der Login `root/123456` wurde abgelehnt, `root/hunter2` hat geklappt. Danach konnte er Befehle absetzen wie `id`, `whoami`, `ls`, `cat /etc/passwd` und sogar einen Download mit `wget`. Cowrie hat die angreifende IP, alle probierten Benutzer und Passwörter und jeden einzelnen Befehl samt Download-Versuch mitgeloggt.
+
+Honeytrap arbeitet anders. Es simuliert die Dienste nur und lässt keine echte Shell zu. Dafür fängt es mehrere Ports und Dienste gleichzeitig ab.
+
+| | Cowrie (Adlin) | Honeytrap (ich) |
+|---|---|---|
+| Interaktion | mittel, echte Fake-Shell | niedrig, nur Simulation |
+| Abdeckung | nur SSH und Telnet | mehrere Ports und Dienste |
+| Was man sieht | genau was der Angreifer tippt (Befehle, Downloads) | von wo auf welche Dienste zugegriffen wird |
+| Stärke | Tiefe | Breite |
+
+Kurz gesagt: Cowrie geht in die Tiefe, man sieht genau, was der Angreifer in der Shell macht. Honeytrap geht in die Breite, man sieht, wo überall geklopft wird. Am besten kombiniert man beide, dann hat man die Breite von Honeytrap und die Detailtiefe von Cowrie.
+
+## 7. Fazit
 
 Die Installation von Honeytrap über Docker ist einfach und schnell. Schon mit der Standard-Konfiguration simuliert er SSH und Telnet und schreibt jeden Zugriff genau mit. Im Test hat er meinen Portscan und meine Verbindungen vom Angreifer-Container komplett erfasst, inklusive IP, Ports und der gesendeten Daten.
 
 Ein Honeypot ersetzt keine Firewall und keine Absicherung, aber er ist ein gutes Frühwarnsystem. Er zeigt, dass jemand im Netz herumschnüffelt, bevor dieser an die echten Systeme kommt, und das ohne Risiko für die produktive Umgebung.
 
-## 7. Quellen
+## 8. Quellen
 
 - Honeytrap Quick Start (offizielle Doku): https://honeytrap.github.io/honeytrap-docs/about/quick-start
 - Honeytrap Konfiguration: https://honeytrap.github.io/honeytrap-docs/manuals/config/
